@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Workflows</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Tax Strategists of America</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Report</div>
+      <a href="index.html">Overview</a>
+      <a href="leaks.html">Leaks <span class="count">106</span></a>
+      <a href="funnels.html">Funnels <span class="count">57</span></a>
+      <a href="workflows.html" class="active">Workflows <span class="count">80 off</span><span class="dot warn" style="margin-left:6px"></span></a>
+      <a href="pipelines.html">Pipelines <span class="count">16</span></a>
+      <a href="emails.html">Emails</a>
+      <a href="calendar.html">Calendars <span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="money.html">Money</a>
+      <a href="splittests.html">Split tests <span class="count">4</span></a>
+      <div class="nav-group-label">Deep dives</div>
+      <a href="forms.html">Forms &amp; surveys</a>
+      <a href="closer-funnel.html">Closer funnel</a>
+      <a href="nurture.html">Nurture &amp; reactivation</a>
+      <a href="smartlists.html">Smart lists</a>
+      <a href="tags.html">Tags &amp; snippets</a>
+      <a href="lgg.html">LGG funnels</a>
+      <a href="changelog.html">Change log</a>
+    </nav>
+    <div class="foot"><div class="line">Snapshot read from GHL</div><div class="line">Sep 28 &amp; Oct 28, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Workflows</h1>
+        <p class="subtitle">A <strong>workflow</strong> is a robot that does a job automatically — "when someone books, send a reminder." You have <strong>269 of them</strong>. <strong>80 are switched off.</strong></p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Updated Oct 28, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">Running (Published)</div><div class="value pos">189</div><div class="note">robots turned on</div></div>
+        <div class="kpi"><div class="label">Switched off (Draft)</div><div class="value neg">80</div><div class="note">built but not running</div></div>
+        <div class="kpi"><div class="label">Not checked</div><div class="value">10</div><div class="note">folders not opened Oct 28</div></div>
+        <div class="kpi"><div class="label">Contacts stuck in drafts</div><div class="value neg">~1,300</div><div class="note">people parked in off workflows</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>On vs off</h2></div>
+      <div class="card">
+        <div class="bar-row" style="grid-template-columns:150px 1fr 100px">
+          <div class="bar-label">Running</div>
+          <div class="bar-track"><div class="bar-fill pos" style="width:70%"></div></div>
+          <div class="bar-val">189</div>
+        </div>
+        <div class="bar-row" style="grid-template-columns:150px 1fr 100px">
+          <div class="bar-label">Switched off</div>
+          <div class="bar-track"><div class="bar-fill neg" style="width:30%"></div></div>
+          <div class="bar-val">80</div>
+        </div>
+        <p class="small muted mb0" style="margin-top:8px">Roughly 3 in 10 of your robots are built but doing nothing. Several are holding contacts hostage inside them.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The robots that are working</h2><span class="quiet">the systems that carry leads</span></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>System</th><th class="num">Enrolled</th><th class="num">Active</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Main webinar router (New Lead Pipeline + Reminders)</td><td class="num">20,833</td><td class="num">211</td><td>Takes every webinar opt-in and sends 8 emails + SMS reminders, then routes to Tuesday/Thursday.</td></tr>
+            <tr><td>Closer system (WF20–WF59)</td><td class="num">~2,000</td><td class="num">~90</td><td>Books the card, assigns owner, no-show/cancel/objection sequences, cart purchases, show-rate texts.</td></tr>
+            <tr><td>NURTURE 21 (Intake Gate + 21-Day Nurture)</td><td class="num">3,108</td><td class="num">1,058</td><td>Warms lost leads back up with 7 emails every 3 days.</td></tr>
+            <tr><td>Brooke reactivation (BR01–BR05, SX)</td><td class="num">~2,600</td><td class="num">0</td><td>Madison's no-answer cadence for Brooke's old leads.</td></tr>
+            <tr><td>Pipeline Gate (PG)</td><td class="num">3,043</td><td class="num">0</td><td>Tags pipeline-only leads and removes them from 48 marketing workflows.</td></tr>
+            <tr><td>Reverse Audit webinar (RA New Lead + Post-Webinar)</td><td class="num">1,274</td><td class="num">201</td><td>The RA registration, reminder and 11-email post-webinar pitch.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Built but switched off — and why it hurts</h2></div>
+      <div class="grid3">
+        <div class="card"><h3>Wojo webinar (4 workflows)</h3><p class="desc">All four Wojo follow-up sequences are Draft since Sep 8. <strong>127 leads</strong> opted in and got no nurture. One trigger was hard-coded to "Thursday, September 3rd".</p></div>
+        <div class="card"><h3>Closer cart reminders (WF43/45/46)</h3><p class="desc">The "sign your agreement" reminders are Draft. <strong>14 buyers</strong> are held inside. Buyers who don't sign get no follow-up.</p></div>
+        <div class="card"><h3>3.0 Webinar Showed (Follow Up)</h3><p class="desc">Draft with <strong>119 active contacts</strong> stuck in it. Same with "create manual call" (143) and "Appointment Confirmation + Reminder" (10).</p></div>
+        <div class="card"><h3>LEAD GEN folder (5 workflows)</h3><p class="desc">The old "Appointment Confirmation + Reminder", "Booked Meeting", "Phone" and "Virtual Meeting" confirmation automations are all Draft, 0 enrolled.</p></div>
+        <div class="card"><h3>Assign New Leads (random)</h3><p class="desc">Draft with <strong>5,836 enrolled</strong>. It's the only thing that would auto-assign the <strong>10,720</strong> AE "New Lead" cards — which is why they have no owner.</p></div>
+        <div class="card"><h3>Empty drafts</h3><p class="desc">Six "New Workflow : …" empty drafts, plus backup copies and duplicates left in folders. One empty draft was created Oct 28.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Two robots with no trigger</h2></div>
+      <div class="card">
+        <div class="finding">
+          <div class="top"><span class="prio p3">note</span><span class="title">WF02 "Initial Booking Follow-Up" is Published but has no trigger</span></div>
+          <div class="body">It can only be entered by two other workflows (both WF01s) that are themselves <strong>Draft</strong>. So this whole setter-path follow-up is dormant.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The closer system (WF20–WF59), workflow by workflow</h2></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Workflow</th><th class="num">Enrolled</th><th class="num">Active</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>WF20 Closer Intake</td><td class="num">227</td><td class="num">0</td><td>Creates Closer card at <strong>Call Booked, $20,000, no owner</strong> (WF36 sets owner later).</td></tr>
+            <tr><td>WF22 Disposition Enforcement</td><td class="num">80</td><td class="num">0</td><td>30 min wait; tasks if Non-Enroll Reason / Next Step empty; tags obj-* (lost) or ne-* (open).</td></tr>
+            <tr><td>WF23 Deals of the Day</td><td class="num">245</td><td class="num">42</td><td>15 booking triggers; 2h after call → "disposition today's call" task.</td></tr>
+            <tr><td>WF24 Closer Won on Payment</td><td class="num">200</td><td class="num">0</td><td>Payment success &gt;$100 → Closer card to Closed Won.</td></tr>
+            <tr><td>WF25 Won Handoff &amp; Package Tags</td><td class="num">18</td><td class="num">0</td><td>closer-won tag, wrap-up task, package tag + card value (Silver 10K / Gold 20K / Diamond &amp; Platinum 30K).</td></tr>
+            <tr><td>WF26 No Show · WF27 Cancelled · WF28 Rescheduled</td><td class="num">26 / 42 / 19</td><td class="num">10 / 6 / 0</td><td>Gold-DQ guard → SMS + 4 emails + call task. WF28's final wait is a dead step.</td></tr>
+            <tr><td>WF29 Lost to Nurture 21</td><td class="num">28</td><td class="num">0</td><td>Adds nurture21-check (but PG then blocks the nurture — see <a href="nurture.html">Nurture</a>).</td></tr>
+            <tr><td>WF30–35 Objections (Spouse, Price, Cash Flow, Timing, Due Diligence, Trust)</td><td class="num">3–12</td><td class="num">0–3</td><td>24h wait → SMS + 3 emails each, tagged by obj-*.</td></tr>
+            <tr><td>WF36 Booking Intake &amp; Reschedule</td><td class="num">244</td><td class="num">0</td><td>closer-booked; removes from 19 nurtures; closer-intake; owner; rebook moves.</td></tr>
+            <tr><td>WF37 / WF38 No Show &amp; Cancel Sync</td><td class="num">22 / 50</td><td class="num">0</td><td>Card → No Show / Cancelled.</td></tr>
+            <tr><td>WF39 Reschedule Card Move</td><td class="num">13</td><td class="num">0</td><td>Duplicates WF36's move to Rescheduled.</td></tr>
+            <tr><td>WF40 / 41 / 49 Cart Purchase (Gold / Silver / Diamond)</td><td class="num">10 / 0 / 5</td><td class="num">0</td><td>Tags buyer + agreement-pending; buyer email; package tag.</td></tr>
+            <tr><td>WF42 Agreement Signed</td><td class="num">10</td><td class="num">0</td><td>Card → Closed Won, renamed signed.</td></tr>
+            <tr><td>WF43 / 45 / 46 Cart reminders</td><td class="num">14 ea</td><td class="num">2–3</td><td><span class="pill neg">Draft</span> — day 1, 3 and 5 reminders if not signed.</td></tr>
+            <tr><td>WF44 Registration Complete</td><td class="num">6</td><td class="num">0</td><td>registration-complete tag, owner alert.</td></tr>
+            <tr><td>WF47 Link Source</td><td class="num">186</td><td class="num">0</td><td>Closer Link → src-closer-{name} tag.</td></tr>
+            <tr><td>WF48 Closed Won Notes</td><td class="num">18</td><td class="num">0</td><td>Task if wrap-up fields empty.</td></tr>
+            <tr><td>WF50 Card on File · WF51 Tier Tag</td><td class="num">0 / 0</td><td class="num">0</td><td>Charge task + owner email; card-on-file tier tag.</td></tr>
+            <tr><td>WF52 Show Rate Texts</td><td class="num">207</td><td class="num">17</td><td>Text 2 min after booking + morning of call (<span class="pill neg">asks federal tax</span>).</td></tr>
+            <tr><td>WF53 Gold DQ</td><td class="num">240</td><td class="num">0</td><td>Under $100K / W-2 → gold-dq tag, card to Gold DQ $0.</td></tr>
+            <tr><td>WF54 Gold DQ → Rowan</td><td class="num">0</td><td class="num">0</td><td><span class="pill neg">Draft</span> — no cancel action despite its name.</td></tr>
+            <tr><td>WF55 Webinar Booking Tag · WF56 Form No Booking</td><td class="num">13 / 23</td><td class="num">0</td><td>webby-booked tag; "finish booking" SMS + call task.</td></tr>
+            <tr><td>WF57 / 58 Stage → appointment No-show / Showed</td><td class="num">18 / 33</td><td class="num">0</td><td>Syncs appointment status from card stage.</td></tr>
+            <tr><td>WF59 Card Owner &amp; Booking Check</td><td class="num">105</td><td class="num">0</td><td>closer-card-needs-fix if no owner / no closer-booked.</td></tr>
+            <tr><td>PG Pipeline Gate</td><td class="num">3,043</td><td class="num">0</td><td>Tags pipeline-only; removes from 48 marketing/nurture workflows.</td></tr>
+            <tr><td>WBX Webinar Booked Exit</td><td class="num">89</td><td class="num">0</td><td>webinar-stop; removes from 7 webinar workflows.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

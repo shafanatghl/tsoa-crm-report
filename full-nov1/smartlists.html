@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Smart lists &amp; scoreboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Tax Strategists of America</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Report</div>
+      <a href="index.html">Overview</a>
+      <a href="leaks.html">Leaks <span class="count">106</span></a>
+      <a href="funnels.html">Funnels <span class="count">57</span></a>
+      <a href="workflows.html">Workflows <span class="count">80 off</span></a>
+      <a href="pipelines.html">Pipelines <span class="count">16</span></a>
+      <a href="emails.html">Emails</a>
+      <a href="calendar.html">Calendars <span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="money.html">Money</a>
+      <a href="splittests.html">Split tests <span class="count">4</span></a>
+      <div class="nav-group-label">Deep dives</div>
+      <a href="forms.html">Forms &amp; surveys</a>
+      <a href="closer-funnel.html">Closer funnel</a>
+      <a href="nurture.html">Nurture &amp; reactivation</a>
+      <a href="smartlists.html" class="active">Smart lists</a>
+      <a href="tags.html">Tags &amp; snippets</a>
+      <a href="lgg.html">LGG funnels</a>
+      <a href="changelog.html">Change log</a>
+    </nav>
+    <div class="foot"><div class="line">Snapshot read from GHL</div><div class="line">Sep 28 &amp; Oct 28, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Smart lists &amp; scoreboard</h1>
+        <p class="subtitle">The saved filters your callers work from (34 lists), and the closer leaderboard (36 widgets). A few lists have <strong>wrong filters baked in</strong>.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Updated Oct 28, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">Smart lists</div><div class="value">34</div><div class="note">Contacts → Smart Lists</div></div>
+        <div class="kpi"><div class="label">Scoreboard widgets</div><div class="value">36</div><div class="note">Closer Pipeline Scoreboard</div></div>
+        <div class="kpi"><div class="label">Lists with wrong filters</div><div class="value neg">2</div><div class="note">"6 mo" = 14 days · name vs tags</div></div>
+        <div class="kpi"><div class="label">Total tags in account</div><div class="value">1,618</div><div class="note">incl. duplicates</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The caller lists</h2><span class="quiet">who owns each list</span></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Smart list</th><th class="num">Contacts</th><th>Owner / caller</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr><td>Brooke's Smart List</td><td class="num">430</td><td>Madison (Brooke)</td><td>filters on Brooke's Pipeline stage <strong>Reactivate</strong></td></tr>
+            <tr><td>Setters: Webinar List (Oct 16)</td><td class="num">729</td><td>Katie &amp; Macy</td><td>tag setters-webinar-oct16, not setters-exclude</td></tr>
+            <tr><td>Setters: Webinar Registrants… (6 mo)</td><td class="num">698</td><td>Setters</td><td><span class="pill neg">name says 6 mo, filter = "Created in last 14 days"</span></td></tr>
+            <tr><td>1) Anahi – Oct 26th 2 pm Webinar</td><td class="num">514</td><td>Anahi</td><td><span class="pill warn">name says Oct 26, tags are Oct 27</span></td></tr>
+            <tr><td>Closer Pipeline | All Leads (DO NOT TOUCH)</td><td class="num">231</td><td>—</td><td>Closer Pipeline OR closer-pipeline OR closer-booked</td></tr>
+            <tr><td>Powerdialer</td><td class="num">952</td><td>—</td><td>august 6th tags, not purchased</td></tr>
+            <tr><td>Reactivation SEGMENT 1 / 2</td><td class="num">4,832 / 9,976</td><td>—</td><td>created before/after May 21 2025</td></tr>
+            <tr><td>Reactivation ALL 46K / 87K</td><td class="num">—</td><td>—</td><td>engaged 6–9 mo / no booked call</td></tr>
+            <tr><td>Per-closer email batches (Cassi, Catherine, Lauren, Nick, Meenasha, Oksana)</td><td class="num">—</td><td>each closer</td><td>Jul 16 / Jul 17–Aug 10 list splits</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Closer Pipeline Scoreboard</h2><span class="quiet">saved range Oct 14 – 27</span></div>
+      <div class="card">
+        <div class="kpis" style="border:none; border-radius:0">
+          <div class="kpi"><div class="label">Booked calls</div><div class="value">107</div></div>
+          <div class="kpi"><div class="label">Showed</div><div class="value">43</div></div>
+          <div class="kpi"><div class="label">Won</div><div class="value pos">$339.5K</div></div>
+          <div class="kpi"><div class="label">Close rate</div><div class="value">26.32%</div></div>
+        </div>
+        <table style="margin-top:12px">
+          <thead><tr><th>Widget</th><th class="num">Value</th><th>Widget</th><th class="num">Value</th></tr></thead>
+          <tbody>
+            <tr><td>Show rate (team)</td><td class="num">75.44%</td><td>Agreements signed</td><td class="num">9</td></tr>
+            <tr><td>Estimated open value</td><td class="num">$2.23M</td><td>Agreements unsigned</td><td class="num">4</td></tr>
+            <tr><td>Cart buyers</td><td class="num">12</td><td>Card on file</td><td class="num">0</td></tr>
+            <tr><td>All funnel sales $500+</td><td class="num">$332.85K</td><td>Closer Pipeline Sales (Won)</td><td class="num">$69.5K</td></tr>
+            <tr><td>Second calls booked</td><td class="num">13</td><td>Close rate – Oksana</td><td class="num">11.11%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Deals by closer (scoreboard)</h2></div>
+      <div class="card">
+        <div class="bar-row" style="grid-template-columns:130px 1fr 50px"><div class="bar-label">Unassigned</div><div class="bar-track"><div class="bar-fill neg" style="width:100%"></div></div><div class="bar-val">35</div></div>
+        <div class="bar-row" style="grid-template-columns:130px 1fr 50px"><div class="bar-label">Cassi Jade</div><div class="bar-track"><div class="bar-fill" style="width:69%"></div></div><div class="bar-val">24</div></div>
+        <div class="bar-row" style="grid-template-columns:130px 1fr 50px"><div class="bar-label">Meenasha</div><div class="bar-track"><div class="bar-fill" style="width:51%"></div></div><div class="bar-val">18</div></div>
+        <div class="bar-row" style="grid-template-columns:130px 1fr 50px"><div class="bar-label">Catherine</div><div class="bar-track"><div class="bar-fill" style="width:51%"></div></div><div class="bar-val">18</div></div>
+        <div class="bar-row" style="grid-template-columns:130px 1fr 50px"><div class="bar-label">Oksana</div><div class="bar-track"><div class="bar-fill" style="width:49%"></div></div><div class="bar-val">17</div></div>
+        <div class="bar-row" style="grid-template-columns:130px 1fr 50px"><div class="bar-label">Nick</div><div class="bar-track"><div class="bar-fill" style="width:46%"></div></div><div class="bar-val">16</div></div>
+        <div class="bar-row" style="grid-template-columns:130px 1fr 50px"><div class="bar-label">Lauren</div><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div><div class="bar-val">14</div></div>
+        <p class="small muted mb0" style="margin-top:8px">Won by closer: Meenasha 2, Nick 1, Cassi 1. Cash collected: Meenasha ~$25K, Nick $0, Cassi $0.</p>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

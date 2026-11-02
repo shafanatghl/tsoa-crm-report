@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Calendars</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Tax Strategists of America</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Report</div>
+      <a href="index.html">Overview</a>
+      <a href="leaks.html">Leaks <span class="count">106</span></a>
+      <a href="funnels.html">Funnels <span class="count">57</span></a>
+      <a href="workflows.html">Workflows <span class="count">80 off</span></a>
+      <a href="pipelines.html">Pipelines <span class="count">16</span></a>
+      <a href="emails.html">Emails</a>
+      <a href="calendar.html" class="active">Calendars <span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="money.html">Money</a>
+      <a href="splittests.html">Split tests <span class="count">4</span></a>
+      <div class="nav-group-label">Deep dives</div>
+      <a href="forms.html">Forms &amp; surveys</a>
+      <a href="closer-funnel.html">Closer funnel</a>
+      <a href="nurture.html">Nurture &amp; reactivation</a>
+      <a href="smartlists.html">Smart lists</a>
+      <a href="tags.html">Tags &amp; snippets</a>
+      <a href="lgg.html">LGG funnels</a>
+      <a href="changelog.html">Change log</a>
+    </nav>
+    <div class="foot"><div class="line">Snapshot read from GHL</div><div class="line">Sep 28 &amp; Oct 28, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Calendars</h1>
+        <p class="subtitle">A booking calendar should send the customer <strong>a confirmation with the call link</strong>, then a reminder. Many of yours send the customer <strong>nothing at all</strong>.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Updated Oct 28, 2026 · re-verified live Nov 1</div>
+    </div>
+
+    <section class="mt0" style="margin-top:22px">
+      <div class="notice blue" style="margin-bottom:14px">
+        <strong>LIVE UPDATE · Nov 1:</strong> the "no confirmation" issue below is <strong>now fixed</strong> — all 6 Follow-Up Call calendars and the closer calendars send the customer a confirmation email + SMS plus reminders, and the "federal tax" wording is replaced with "bring two profit numbers." <strong>28 calendars still send nothing</strong> (mostly Q&amp;A / group / personal). See the <a href="automations.html">automations</a> page for the live trigger map.
+      </div>
+    </section>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">Calendars</div><div class="value">48</div><div class="note">in the account</div></div>
+        <div class="kpi"><div class="label">Send the customer nothing</div><div class="value neg">~14</div><div class="note">incl. all 6 Follow-Up calls</div></div>
+        <div class="kpi"><div class="label">Send SMS but with wrong text</div><div class="value" style="color:var(--warning)">~8</div><div class="note">asks for "last year's federal tax"</div></div>
+        <div class="kpi"><div class="label">Send a full confirmation</div><div class="value pos">1</div><div class="note">only Rowan's personal calendar</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Why Ghada Lutfi got nothing</h2></div>
+      <div class="notice red" style="margin-bottom:12px">
+        <strong>The exact case:</strong> Ghada Lutfi booked "Follow-Up Call with Lauren Bracken" for Nov 4. Her appointment was created and <strong>confirmed</strong> — but the calendar has the <strong>"Contact" box unchecked</strong> on every confirmation and reminder. So the closer got the notification, and Ghada got <strong>zero emails, zero texts</strong>. Nothing was ever sent to her.
+      </div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Channel</th><th>Who it goes to</th><th>Result for the customer</th></tr></thead>
+          <tbody>
+            <tr><td>Booked (Confirmed) email</td><td>Assigned user only</td><td><span class="pill neg">customer gets nothing</span></td></tr>
+            <tr><td>Booked (Confirmed) SMS</td><td>off</td><td><span class="pill neg">customer gets nothing</span></td></tr>
+            <tr><td>Reminder email</td><td>toggle ON but <strong>no recipient ticked</strong></td><td><span class="pill neg">sends to nobody</span></td></tr>
+            <tr><td>Reminder SMS (1 hour before)</td><td>Contact only</td><td><span class="pill warn">the one thing that does reach her</span></td></tr>
+          </tbody>
+        </table>
+        <p class="small muted mb0" style="margin-top:10px">Identical on all 6 "Follow-Up Call" calendars (Lauren, Oksana, Nick, Cassi, Catherine, Meenasha). This is <a href="leaks.html">leak #78</a>.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>What each calendar sends the customer</h2><span class="quiet">read from the calendar editor, Oct 28</span></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Calendar</th><th>Confirmation</th><th>Reminder</th><th>Customer actually gets</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Follow-Up Call</strong> — Lauren, Oksana, Nick, Cassi, Catherine, Meenasha (6)</td><td>staff only</td><td>1 SMS (1h before)</td><td><span class="pill neg">1 text, nothing else</span></td></tr>
+            <tr><td>*The Enrollment Advisor (Minimal) · The Enrollment Advisor (Webinar)</td><td>staff only</td><td>staff only</td><td><span class="pill neg">nothing</span></td></tr>
+            <tr><td>Tax Strategy Q&amp;A (Webinar) · Brooke personal calendars (3) · **Tax Client Engagement · *Tax Client Engagement (Rowan RR)</td><td>staff only</td><td>none</td><td><span class="pill neg">nothing</span></td></tr>
+            <tr><td>**The Enrollment Advisor · Enrollment Advisory with Cassi / Lauren / Nick / Catherine / Meenasha · Brooke Strategy Call</td><td>SMS to contact</td><td>SMS 1h + 10min</td><td><span class="pill warn">2 texts, but the confirmation asks for "last year's federal tax"</span></td></tr>
+            <tr><td>Enrollment Advisory Call with Oksana</td><td>SMS to contact</td><td>SMS 1h + 10min</td><td><span class="pill pos">2 texts, wording already fixed (2 numbers)</span></td></tr>
+            <tr><td>Tax Client Engagement Call with Rowan (personal)</td><td>email + SMS</td><td>email 10min</td><td><span class="pill pos">full confirmation + reminder</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The two fixes</h2></div>
+      <div class="grid2">
+        <div class="card"><h3>1 · Tick "Contact"</h3><p class="desc" style="font-size:14px;color:var(--text)">On the 6 Follow-Up calendars and the Minimal/Webinar calendars, go to <em>Advanced → Notifications</em> and tick <strong>Contact</strong> on Booked (Confirmed) Email &amp; SMS and on Reminder. Then set the reminder to 1 hour + 10 minutes before, like the Enrollment Advisory calendars.</p></div>
+        <div class="card"><h3>2 · Fix the wording</h3><p class="desc" style="font-size:14px;color:var(--text)">On the closer calendars, replace the "Bring 3 rough numbers … last year's federal tax" SMS with the wording Oksana already uses: <em>"Bring 2 rough numbers: last year's profit and this year's projected profit. Ballparks are fine."</em></p></div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

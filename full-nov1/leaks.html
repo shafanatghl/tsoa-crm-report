@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Leaks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="mark">T</span>
+      <div class="name">TSOA CRM</div>
+      <div class="scope">Tax Strategists of America</div>
+    </div>
+    <nav class="nav">
+      <div class="nav-group-label">Report</div>
+      <a href="index.html">Overview</a>
+      <a href="leaks.html" class="active">Leaks <span class="count">106</span><span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="funnels.html">Funnels <span class="count">57</span></a>
+      <a href="workflows.html">Workflows <span class="count">80 off</span><span class="dot warn" style="margin-left:6px"></span></a>
+      <a href="pipelines.html">Pipelines <span class="count">16</span></a>
+      <a href="emails.html">Emails</a>
+      <a href="calendar.html">Calendars <span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="money.html">Money</a>
+      <a href="splittests.html">Split tests <span class="count">4</span></a>
+      <div class="nav-group-label">Deep dives</div>
+      <a href="forms.html">Forms &amp; surveys</a>
+      <a href="closer-funnel.html">Closer funnel</a>
+      <a href="nurture.html">Nurture &amp; reactivation</a>
+      <a href="smartlists.html">Smart lists</a>
+      <a href="tags.html">Tags &amp; snippets</a>
+      <a href="lgg.html">LGG funnels</a>
+      <a href="changelog.html">Change log</a>
+    </nav>
+    <div class="foot">
+      <div class="line">Snapshot read from GHL</div>
+      <div class="line">Sep 28 &amp; Oct 28, 2026</div>
+    </div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Leaks</h1>
+        <p class="subtitle">A <strong>leak</strong> is a hole where a lead falls out and nobody talks to them again. There are <strong>106 of them</strong> right now.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Updated Oct 28, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">Open leaks</div><div class="value neg">106</div><div class="note">was 16 in September</div></div>
+        <div class="kpi"><div class="label">Urgent (P1)</div><div class="value neg">24</div><div class="note">fix first — these cost money</div></div>
+        <div class="kpi"><div class="label">Medium (P2)</div><div class="value" style="color:var(--warning)">25</div><div class="note">fix next</div></div>
+        <div class="kpi"><div class="label">Lower (P3)</div><div class="value">31</div><div class="note">cleanup / hygiene</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>What the holes are, in plain words</h2></div>
+      <div class="grid3">
+        <div class="card"><h3>The wrong question</h3><p class="desc mb0">Messages keep asking leads for <strong>"last year's tax return"</strong> and <strong>"federal tax paid"</strong> — the exact thing they shouldn't be asked. It's in 7 calendars, the confirmation pages, the Reverse Audit emails and the opt-in forms.</p></div>
+        <div class="card"><h3>Bookings that go silent</h3><p class="desc mb0">Several calendars have the <strong>"Contact" box unchecked</strong>, so the customer books and gets <strong>no confirmation, no link, no reminder</strong>. Exactly what happened with Ghada Lutfi.</p></div>
+        <div class="card"><h3>Robots fighting robots</h3><p class="desc mb0">Two automations (SX and PG) quietly <strong>delete leads</strong> from other follow-ups the same second they start. Leads vanish before they get one email.</p></div>
+        <div class="card"><h3>Built but switched off</h3><p class="desc mb0">80 workflows are in <strong>Draft</strong> — fully built, just not running. Wojo leads (127 people) and closer cart reminders are the casualties.</p></div>
+        <div class="card"><h3>Emails that don't land</h3><p class="desc mb0">Delivery is <strong>24–60%</strong>. Five router emails have <strong>0 clicks</strong> out of ~12,000 sends, partly because click-tracking is off and dates print blank.</p></div>
+        <div class="card"><h3>Counts that lie</h3><p class="desc mb0">A ClickFunnels webhook fires <strong>2,440 times</strong> with the same contact and blank emails, inflating your numbers and double-sending.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The 24 urgent ones (P1)</h2><span class="quiet">each with the fix</span></div>
+
+      <div class="card" style="margin-bottom:16px"><h3>1 · Messages ask for "last year's tax"</h3>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#29 · Closer confirmation SMS asks for last year's federal tax</span></div><div class="fix">On 7 calendars, change "Bring 3 rough numbers… last year's federal tax…" to Oksana's already-fixed wording ("last year's profit and this year's projected profit").</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#28 · WF52 "Text 2 morning of call" asks for federal tax</span></div><div class="fix">Both branches, replace the last two sentences (drops "last year's federal tax" and "No returns needed").</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#30 · Both confirmation pages ask for tax returns</span></div><div class="fix">Replace the "tax returns" checklist item on /strategy-call-confirmed and /webinar-strategy-call-confirmed.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#31 · WF28 rescheduled email asks for tax returns</span></div><div class="fix">Remove item 1 ("last year's business and personal tax returns") and renumber.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#32 · Reverse Audit Email 3 says "grab last year's return"</span></div><div class="fix">Change the shared template so the three things are phone, pen and a rough idea of profit.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#81 · Reverse Audit reminder SMS 1 + Email 4 ask for the return</span></div><div class="fix">Drop the tax-return sentence from SMS 1 and template DH: P2E4D2.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#82 · Reverse Audit post-webinar emails ask what they paid the IRS</span></div><div class="fix">Replace "what you paid the IRS last year" with profit wording in templates DH: P3E1D0, P3E2D1, P3E8D4.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#83 · Reverse Audit Email 6 states a federal tax bill</span></div><div class="fix">Change "Total bill… federal and California combined" to just "Total tax bill…".</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#84 · Reverse Audit opt-in form asks "how much did you pay in federal taxes"</span></div><div class="fix">Reword to "Roughly what did you pay in taxes last year?" and reselect the field.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#86 · WF02 Email A02 is built on the CPA objection</span></div><div class="fix">Rewrite around "filing vs planning" without naming the CPA (workflow is dormant, fix before it goes live).</div></div>
+      </div>
+
+      <div class="card" style="margin-bottom:16px"><h3>2 · Bookings that go silent</h3>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#78 · The 6 "Follow-Up Call" calendars send no confirmation</span></div><div class="fix">Tick "Contact" on Booked (Confirmed) Email &amp; SMS and on Reminder Email; add the 1h + 10min SMS reminder. <em>(This is the Ghada Lutfi / Lauren Bracken issue.)</em></div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#49 · Minimal and Webinar closer calendars send nothing</span></div><div class="fix">Tick Contact on confirmations + reminders for *The Enrollment Advisor (Jszn) and (Webinar) (7DW5); add a reminder to the Q&amp;A (Webinar) calendar.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#80 · *No Show/Canceled fires on closer no-shows too</span></div><div class="fix">Add an "In calendar group = legacy AE calendars" filter, or add closer tags to the skip step.</div></div>
+      </div>
+
+      <div class="card" style="margin-bottom:16px"><h3>3 · Robots fighting robots</h3>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#40 · SX pulls leads out of BR01 2 seconds after it starts</span></div><div class="fix">Restrict SX's triggers to "Call Booked" (not every stage change), and add a calendar filter to "Customer Booked Appointment".</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#41 · PG blocks lost closer leads from ever reaching NURTURE 21</span></div><div class="fix">Add an If/Else first in PG: if stage is Nurture/Closed Lost, remove pipeline-only and end (don't remove from Intake Gate).</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#77 · Stranded "nurture21-gating" tag blocks every later wake</span></div><div class="fix">In Intake Gate, replace the "Already gating → END" with "remove tag → re-run GATE-LOCK"; bulk-fix the stranded contacts.</div></div>
+      </div>
+
+      <div class="card" style="margin-bottom:16px"><h3>4 · Leads that get nothing</h3>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#79 · /act opt-ins get no confirmation, card or tag</span></div><div class="fix">Add the "Internal - TSOA Live Webinar Funnel Form" to the Jason router's Form Submitted trigger.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#43 · LGG Discovery Call books every applicant into "Call Booked" ($20,000)</span></div><div class="fix">Add a "Qualified?" branch — a "no" shouldn't create a Closer card.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#46 · JUAN (LGG) sends no SMS and its emails show 0% delivered</span></div><div class="fix">Enable the 5 disabled SMS steps and fix email deliverability (or route LGG leads into the main router).</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#42 · Closer cart reminder chain is off</span></div><div class="fix">Publish WF43, WF45, WF46 (or remove the 8 held contacts and assign who calls unsigned buyers).</div></div>
+      </div>
+
+      <div class="card" style="margin-bottom:16px"><h3>5 · Emails &amp; data that lie</h3>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#48 · Webinar emails use blank appointment fields</span></div><div class="fix">Swap {{appointment.*}} for the AddEvent outputs ({{custom_code.8.output.day}} etc.) in the router and SMS reminders.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#107 · Reverse Audit reminder emails use blank appointment fields</span></div><div class="fix">Same swap in templates DH: P2E1D0–P2E4D2; send one test and read it.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#52 · TUESDAY and THURSDAY post-webinar SMS aren't sending</span></div><div class="fix">Open each SMS: check the Disabled toggle, the from number, and send a test to an internal contact.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">P1</span><span class="title">#50 · Book A Call split test isn't splitting traffic (6 vs 112 views)</span></div><div class="fix">Point the expired countdown redirect at the routed path, and replace /book-a-qa-call-page links everywhere.</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Medium &amp; lower (P2 + P3) — the rest, by theme</h2><span class="quiet">82 more, grouped</span></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Theme</th><th class="num">Leak #</th><th>What it is</th></tr></thead>
+          <tbody>
+            <tr><td><span class="pill warn">P2/P3</span> Tax / CPA copy</td><td class="num">33, 34, 35, 37, 38, 39, 85, 102</td><td>Snippets, closer page kicker, cash-flow emails, tax calculator and CPA mentions still reference last year's tax or the CPA.</td></tr>
+            <tr><td><span class="pill warn">P2</span> Calendar / confirmation</td><td class="num">55, 99, 100</td><td>Rowan, Tax Client Engagement and Brooke personal calendars send the lead nothing; empty "additional emails" boxes ticked.</td></tr>
+            <tr><td><span class="pill warn">P2/P3</span> Webhook / routing</td><td class="num">2, 11, 44, 45, 47, 51</td><td>ClickFunnels double-counts; LGG applicants who don't book get no follow-up; W-2 branch doesn't stop disqualified leads.</td></tr>
+            <tr><td><span class="pill warn">P2/P3</span> Pipelines &amp; data</td><td class="num">17–27, 58–65, 66, 74</td><td>Setter pipeline empty, 10,720 New Lead cards with no owner, ~70k dead cards, no source on 1,696 opps, unassigned cards.</td></tr>
+            <tr><td><span class="pill warn">P2/P3</span> Workflow bugs</td><td class="num">53, 54, 88–95, 105</td><td>Setter/enrollment workflows with wrong waits, wrong tags, inverted branches, typos and dead-end steps.</td></tr>
+            <tr><td><span class="pill warn">P2</span> Brooke's clones</td><td class="num">96, 97, 98</td><td>Brooke's emails all sent from "Carlotta" and never name Brooke; two clones missing the Gold DQ guard.</td></tr>
+            <tr><td><span class="pill warn">P3</span> Hygiene</td><td class="num">67, 68, 70, 72, 73, 76, 101, 103, 104, 106</td><td>example.com privacy links, TEST calendar/workflows left live, dead quiz code, wrong smart-list names, duplicate tags, unstarted variation pages reachable.</td></tr>
+          </tbody>
+        </table>
+        <p class="small muted mt0" style="margin-top:10px">Full detail (evidence, exact fix, owner) is in the source workbook — <strong>Leaks</strong> tab, one row per leak.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Complete leak index (1–107)</h2><span class="quiet">every hole, one line each</span></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>#</th><th class="num">Priority</th><th>Issue (short)</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td class="num">Open</td><td>Wojo opt-ins get no nurture (4 workflows Draft). ~127 leads.</td></tr>
+            <tr><td>2</td><td class="num">Open</td><td>ClickFunnels webhook double-counts (2,440 matches, blank email).</td></tr>
+            <tr><td>3</td><td class="num">Open</td><td>Lisette form mismatch — /act runs a different form (~23).</td></tr>
+            <tr><td>4</td><td class="num">Open</td><td>Survey Angle leads get no email or SMS (36).</td></tr>
+            <tr><td>5</td><td class="num">Open</td><td>3.0 Webinar Showed Draft with 119 active contacts.</td></tr>
+            <tr><td>6</td><td class="num">Open</td><td>Wojo split test 50/50 but 21 vs 1,748 views (invalid).</td></tr>
+            <tr><td>7</td><td class="num">P3</td><td>Google/YouTube + TaxQuisition pages convert 0–3%.</td></tr>
+            <tr><td>8</td><td class="num">P3</td><td>Testimonial page 956 views, no capture.</td></tr>
+            <tr><td>9</td><td class="num">P3</td><td>Private Podcast opt-in 3.25% on 410 views.</td></tr>
+            <tr><td>10</td><td class="num">P3</td><td>Replay pages &lt;1% while DFY drives $92.6K.</td></tr>
+            <tr><td>11</td><td class="num">P2</td><td>LGG leads reach almost no emails (~86).</td></tr>
+            <tr><td>12</td><td class="num">P3</td><td>Tax Savings Estimator completes 9.56% (28).</td></tr>
+            <tr><td>13</td><td class="num">Open</td><td>Internal form 183 views / 4 responses — only WiserNotify fires.</td></tr>
+            <tr><td>14</td><td class="num">Open</td><td>Copy errors: Tues 6pm time, Email List Growth subject "test".</td></tr>
+            <tr><td>15</td><td class="num">Open</td><td>Five router emails 0% clicks (~12,000 sends).</td></tr>
+            <tr><td>16</td><td class="num">Open</td><td>Delivery 24–60% across all workflows.</td></tr>
+            <tr><td>17</td><td class="num">Open</td><td>Setter pipeline gets no real leads.</td></tr>
+            <tr><td>18</td><td class="num">Open</td><td>*No Show/Canceled fires on every calendar (no filter).</td></tr>
+            <tr><td>19</td><td class="num">Open</td><td>8,597 (now 10,720) New Lead cards, no owner, no call task.</td></tr>
+            <tr><td>20</td><td class="num">Open</td><td>WAVV stages mixed; suppressed cards stay open.</td></tr>
+            <tr><td>21</td><td class="num">Closed</td><td>WF10 fired on every reply — fixed (now tsoa-applicant only).</td></tr>
+            <tr><td>22</td><td class="num">Open</td><td>~70,000 dead cards; stage probabilities auto-filled.</td></tr>
+            <tr><td>23</td><td class="num">Open</td><td>No pipeline records sales — last Won Feb 2, 2026; $0 won.</td></tr>
+            <tr><td>24</td><td class="num">Open</td><td>Two $20K payments failed, never recovered (~$40K).</td></tr>
+            <tr><td>25</td><td class="num">Open</td><td>1,696 opportunities have no lead source.</td></tr>
+            <tr><td>26</td><td class="num">Open</td><td>GA/FB/Google Ads "Connection expired"; ~20 admin users.</td></tr>
+            <tr><td>27</td><td class="num">Open</td><td>Phone gaps: setter seats no number, no voicemail/scripts/pools.</td></tr>
+            <tr><td>28</td><td class="num">P1</td><td>WF52 Text 2 asks for last year's federal tax.</td></tr>
+            <tr><td>29</td><td class="num">P1</td><td>Closer confirmation SMS asks for federal tax (7 calendars).</td></tr>
+            <tr><td>30</td><td class="num">P1</td><td>Both confirmation pages ask for tax returns.</td></tr>
+            <tr><td>31</td><td class="num">P1</td><td>WF28 rescheduled email asks for tax returns.</td></tr>
+            <tr><td>32</td><td class="num">P1</td><td>Reverse Audit Email 3 says "grab last year's return".</td></tr>
+            <tr><td>33</td><td class="num">P2</td><td>Snippets ask for tax return + taxes paid.</td></tr>
+            <tr><td>34</td><td class="num">P2</td><td>Closer pages + form mention federal tax last year.</td></tr>
+            <tr><td>35</td><td class="num">P2</td><td>WF31 Email M-1 asks to reply with last year's total tax.</td></tr>
+            <tr><td>36</td><td class="num">P3</td><td>"Average savings $37,000" across 6 emails.</td></tr>
+            <tr><td>37</td><td class="num">P3</td><td>WF32 cash flow emails point to last year's return/tax.</td></tr>
+            <tr><td>38</td><td class="num">P2</td><td>AE application survey + calculator reference the 1040/federal.</td></tr>
+            <tr><td>39</td><td class="num">P3</td><td>CPA mentions across webinar emails.</td></tr>
+            <tr><td>40</td><td class="num">P1</td><td>SX pulls leads out of BR01 2 seconds after it starts.</td></tr>
+            <tr><td>41</td><td class="num">P1</td><td>PG blocks lost closer leads from NURTURE 21.</td></tr>
+            <tr><td>42</td><td class="num">P1</td><td>Closer cart reminder chain off (WF43/45/46 Draft).</td></tr>
+            <tr><td>43</td><td class="num">P1</td><td>LGG Discovery books every applicant into Call Booked.</td></tr>
+            <tr><td>44</td><td class="num">P2</td><td>LGG non-bookers get no follow-up.</td></tr>
+            <tr><td>45</td><td class="num">P2</td><td>LGG W-2 disqualify page 404; opt-ins land in another funnel.</td></tr>
+            <tr><td>46</td><td class="num">P1</td><td>JUAN: SMS disabled, emails 0% delivered.</td></tr>
+            <tr><td>47</td><td class="num">P2</td><td>JUAN W-2 branch doesn't stop disqualified registrants.</td></tr>
+            <tr><td>48</td><td class="num">P1</td><td>Webinar emails use blank appointment merge fields.</td></tr>
+            <tr><td>49</td><td class="num">P1</td><td>Minimal + Webinar calendars send the contact nothing.</td></tr>
+            <tr><td>50</td><td class="num">P1</td><td>Book A Call split test not splitting traffic.</td></tr>
+            <tr><td>51</td><td class="num">P2</td><td>Booking Page (group) countdown expired → redirects away.</td></tr>
+            <tr><td>52</td><td class="num">P1</td><td>TUESDAY/THURSDAY post-webinar SMS not sending.</td></tr>
+            <tr><td>53</td><td class="num">P3</td><td>WF04B wait "2 days" set to 1; no rebook guard.</td></tr>
+            <tr><td>54</td><td class="num">P2</td><td>WF28 dead wait step; no gold-dq guard.</td></tr>
+            <tr><td>55</td><td class="num">P2</td><td>WBX + SX fire on any calendar booking (no filter).</td></tr>
+            <tr><td>56</td><td class="num">P2</td><td>WF53 Gold DQ missing the Minimal + Webinar forms.</td></tr>
+            <tr><td>57</td><td class="num">P2</td><td>Gold DQ outside closer tracking; Rowan reroute off.</td></tr>
+            <tr><td>58</td><td class="num">P3</td><td>Setters "6 mo" list only pulls last 14 days.</td></tr>
+            <tr><td>59</td><td class="num">P2</td><td>Brooke's list filters Reactivate → drops called leads.</td></tr>
+            <tr><td>60</td><td class="num">P2</td><td>Webinar Reminder Calls cards not moved (2,239 stuck).</td></tr>
+            <tr><td>61</td><td class="num">P2</td><td>35 Closer cards have no owner.</td></tr>
+            <tr><td>62</td><td class="num">P2</td><td>Brooke's Closed Won cards carry $0.</td></tr>
+            <tr><td>63</td><td class="num">P2</td><td>Hyros Discovery fires on any appointment status/calendar.</td></tr>
+            <tr><td>64</td><td class="num">P3</td><td>tsoa-intake-ready triggers nothing.</td></tr>
+            <tr><td>65</td><td class="num">P3</td><td>WF39 duplicates the WF36 move to Rescheduled.</td></tr>
+            <tr><td>66</td><td class="num">P2</td><td>Duplicate tags (setters-p2, client, reactivate, …).</td></tr>
+            <tr><td>67</td><td class="num">P3</td><td>Privacy/Terms links → www.example.com.</td></tr>
+            <tr><td>68</td><td class="num">P3</td><td>TEST calendar/workflows + empty drafts left live.</td></tr>
+            <tr><td>69</td><td class="num">P3</td><td>Closer funnel stats don't count bookings.</td></tr>
+            <tr><td>70</td><td class="num">P3</td><td>Dead quiz code on closer pages.</td></tr>
+            <tr><td>71</td><td class="num">P3</td><td>Follow-Up calendars run the full DQ form.</td></tr>
+            <tr><td>72</td><td class="num">P3</td><td>Jason funnel copy/page errors (footer, countdown, Apple link).</td></tr>
+            <tr><td>73</td><td class="num">P3</td><td>SP01 has no enrollments since Oct 15.</td></tr>
+            <tr><td>74</td><td class="num">P3</td><td>Smart list name doesn't match its filter.</td></tr>
+            <tr><td>75</td><td class="num">P2</td><td>Q&amp;A popup form triggers only the WiserNotify webhook.</td></tr>
+            <tr><td>76</td><td class="num">P3</td><td>NURTURE 21 Lead Events doesn't check pipeline-only.</td></tr>
+            <tr><td>77</td><td class="num">P1</td><td>Stranded nurture21-gating tag blocks every later wake.</td></tr>
+            <tr><td>78</td><td class="num">P1</td><td>6 Follow-Up calendars: no confirmation, reminder email has no recipient.</td></tr>
+            <tr><td>79</td><td class="num">P1</td><td>/act opt-ins get no confirmation, card or tag.</td></tr>
+            <tr><td>80</td><td class="num">P1</td><td>*No Show/Canceled fires on closer cancels/no-shows.</td></tr>
+            <tr><td>81</td><td class="num">P1</td><td>Reverse Audit reminder SMS 1 + Email 4 ask for the return.</td></tr>
+            <tr><td>82</td><td class="num">P1</td><td>Reverse Audit post-webinar asks "what you paid the IRS".</td></tr>
+            <tr><td>83</td><td class="num">P1</td><td>Reverse Audit Email 6 states a federal tax bill.</td></tr>
+            <tr><td>84</td><td class="num">P1</td><td>Reverse Audit opt-in form asks "paid in federal taxes".</td></tr>
+            <tr><td>85</td><td class="num">P3</td><td>CPA mentions in Reverse Audit emails.</td></tr>
+            <tr><td>86</td><td class="num">P1</td><td>WF02 Email A02 built on the CPA objection.</td></tr>
+            <tr><td>87</td><td class="num">P3</td><td>WF02 Published with no trigger.</td></tr>
+            <tr><td>88</td><td class="num">P2</td><td>WF07A Enrollment Showed fires on any status; branches inverted.</td></tr>
+            <tr><td>89</td><td class="num">P2</td><td>WF06 Sales Call reminders can never send (wrong tag).</td></tr>
+            <tr><td>90</td><td class="num">P3</td><td>WF04C copies WF04B's defects.</td></tr>
+            <tr><td>91</td><td class="num">P3</td><td>WF05 checks wrong tag; names closers who are gone.</td></tr>
+            <tr><td>92</td><td class="num">P3</td><td>WF08 education: wrong lookup, active tag stays on, N03 unsynced.</td></tr>
+            <tr><td>93</td><td class="num">P3</td><td>WF09 Closed Lost removes the tag it just added.</td></tr>
+            <tr><td>94</td><td class="num">P3</td><td>WF09F C01 can never send (reply-hold recheck).</td></tr>
+            <tr><td>95</td><td class="num">P3</td><td>tsoa-reply-hold never cleared; WF10 doesn't stop newer flows.</td></tr>
+            <tr><td>96</td><td class="num">P2</td><td>Brooke's emails all sent from "Carlotta", never name Brooke.</td></tr>
+            <tr><td>97</td><td class="num">P2</td><td>WF26/WF27 (Brooke) have no Gold DQ guard.</td></tr>
+            <tr><td>98</td><td class="num">P3</td><td>WF20 (Brooke) creates a card with no owner.</td></tr>
+            <tr><td>99</td><td class="num">P2</td><td>Rowan / Tax Client Engagement / Brooke personal calendars send nothing.</td></tr>
+            <tr><td>100</td><td class="num">P3</td><td>Empty "additional emails / phone numbers" boxes ticked.</td></tr>
+            <tr><td>101</td><td class="num">P3</td><td>BR03 processes a reactivation lead only once.</td></tr>
+            <tr><td>102</td><td class="num">P2</td><td>Dormant Webinar form asks federal tax/returns; LGG form unused.</td></tr>
+            <tr><td>103</td><td class="num">P3</td><td>Reverse Audit timing copy doesn't match send time.</td></tr>
+            <tr><td>104</td><td class="num">P3</td><td>Unstarted split variation pages publicly reachable.</td></tr>
+            <tr><td>105</td><td class="num">P3</td><td>Draft + duplicate workflows left in folders.</td></tr>
+            <tr><td>106</td><td class="num">P3</td><td>Reverse Audit disqualified leads get the full 11-email pitch.</td></tr>
+            <tr><td>107</td><td class="num">P1</td><td>Reverse Audit reminder emails use blank appointment fields.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

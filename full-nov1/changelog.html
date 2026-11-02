@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Change log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Tax Strategists of America</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Report</div>
+      <a href="index.html">Overview</a>
+      <a href="leaks.html">Leaks <span class="count">106</span></a>
+      <a href="funnels.html">Funnels <span class="count">57</span></a>
+      <a href="workflows.html">Workflows <span class="count">80 off</span></a>
+      <a href="pipelines.html">Pipelines <span class="count">16</span></a>
+      <a href="emails.html">Emails</a>
+      <a href="calendar.html">Calendars <span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="money.html">Money</a>
+      <a href="splittests.html">Split tests <span class="count">4</span></a>
+      <div class="nav-group-label">Deep dives</div>
+      <a href="forms.html">Forms &amp; surveys</a>
+      <a href="closer-funnel.html">Closer funnel</a>
+      <a href="nurture.html">Nurture &amp; reactivation</a>
+      <a href="smartlists.html">Smart lists</a>
+      <a href="tags.html">Tags &amp; snippets</a>
+      <a href="lgg.html">LGG funnels</a>
+      <a href="changelog.html" class="active">Change log</a>
+    </nav>
+    <div class="foot"><div class="line">Snapshot read from GHL</div><div class="line">Sep 28 &amp; Oct 28, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Change log</h1>
+        <p class="subtitle">Everything that was built and changed, Sep 28 → Oct 28, 2026. A lot was built — <strong>and a lot was left half-wired</strong>.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Updated Oct 28, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="section-head"><h2>The build, week by week</h2></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Date</th><th>Area</th><th>What was built / changed</th><th>State</th></tr></thead>
+          <tbody>
+            <tr><td class="nowrap">Sep 28–29</td><td>Pipelines · Workflows</td><td>Added setter stages; fixed WF03/04/06/07B; built WF11 Mark Won on Payment; WF10 reply filter</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td class="nowrap">Oct 1</td><td>Funnels · Calendars</td><td>TSOA Closer Funnel + /strategy-call live; Closer Pipeline + WF20–WF39; 6-closer round robin</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td class="nowrap">Oct 9</td><td>Funnels · Forms · WF</td><td>13 closer checkout carts (Gold/Silver); registration + agreement forms/pages; WF40–WF46 (Draft)</td><td><span class="pill warn">draft</span></td></tr>
+            <tr><td class="nowrap">Oct 10</td><td>Funnels · WF</td><td>6 per-closer booking pages; Closer form + hidden Closer Link; WF47; <strong>21-Day Nurture turned on</strong></td><td><span class="pill pos">live</span></td></tr>
+            <tr><td class="nowrap">Oct 12</td><td>Calendars · WF</td><td>6 Follow-Up Call calendars; WF22 stage gate; WF30–35 objection sequences; Platinum set $30K</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td class="nowrap">Oct 13</td><td>Rules · Pipelines</td><td>Standing copy rules set (no CPA/federal tax/returns); Gold DQ pipeline + WF53</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td class="nowrap">Oct 14–15</td><td>Workflows</td><td>Brooke closer system (clones); Brooke reactivation BR01–BR05; setter build SP01/SP04</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td class="nowrap">Oct 16</td><td>Pipelines · WF</td><td>Setters Pipeline 2 (50/50 split); <strong>SX Setter Exit published</strong></td><td><span class="pill warn">SX now breaks BR01</span></td></tr>
+            <tr><td class="nowrap">Oct 18</td><td>Workflows</td><td>Pipeline-only tag gate (PG) + guards in marketing workflows</td><td><span class="pill warn">PG now blocks NURTURE 21</span></td></tr>
+            <tr><td class="nowrap">Oct 19</td><td>Forms · WF</td><td>Minimal booking form; WRC00–WRC03 reminder-call workflows; Webinar Reminder Calls pipeline</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td class="nowrap">Oct 20</td><td>Split tests · WF</td><td>S2, S3, S4 started; WF36/37/38; WF55/57/58/59</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td class="nowrap">Oct 21</td><td>Split tests · Funnels</td><td>S1 started (later found broken); all 23 checkout redirects → tier Jotforms; WF52</td><td><span class="pill warn">S1 not splitting</span></td></tr>
+            <tr><td class="nowrap">Oct 23</td><td>Workflows</td><td>LGG Discovery: $20K card + closer-applied-nobook tag (no follow-up built)</td><td><span class="pill warn">no qualify branch</span></td></tr>
+            <tr><td class="nowrap">Oct 26</td><td>Workflows</td><td>WBX Webinar Booked Exit; WF43/45/46 last edited → left Draft</td><td><span class="pill warn">cart reminders off</span></td></tr>
+            <tr><td class="nowrap">Oct 27</td><td>Funnels · Forms</td><td>Webinar book-a-call page rebuilt (calendar in hero, own form); WF56; minimal calendar swap</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td class="nowrap">Oct 28</td><td>Calendars · Hygiene</td><td>Oksana's SMS fixed (2-number wording); 5 other calendars + k2Oc + Brooke still ask federal tax; empty draft + "Made By shafan" folder created</td><td><span class="pill warn">partial</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Two decisions that are still open</h2></div>
+      <div class="grid2">
+        <div class="card"><h3>Jon approved turning on confirmations (Oct 23) — not done</h3><p class="desc mb0">Jon approved switching on confirmation/reminder emails for *The Enrollment Advisor (Minimal). As of Oct 28 the "Contact" box is still unchecked on the Minimal and Webinar calendars.</p></div>
+        <div class="card"><h3>WF25 Platinum value</h3><p class="desc mb0">Set to $30,000 (same as Diamond) — resolved Oct 12, not $20,000.</p></div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
