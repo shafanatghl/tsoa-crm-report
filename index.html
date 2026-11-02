@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Overview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="mark">T</span>
+      <div class="name">TSOA CRM</div>
+      <div class="scope">Tax Strategists of America</div>
+    </div>
+    <nav class="nav">
+      <div class="nav-group-label">Report</div>
+      <a href="index.html" class="active">Overview</a>
+      <a href="leaks.html">Leaks <span class="count">106</span><span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="funnels.html">Funnels <span class="count">57</span></a>
+      <a href="workflows.html">Workflows <span class="count">80 off</span><span class="dot warn" style="margin-left:6px"></span></a>
+      <a href="pipelines.html">Pipelines <span class="count">16</span></a>
+      <a href="emails.html">Emails</a>
+      <a href="calendar.html">Calendars <span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="money.html">Money</a>
+      <a href="splittests.html">Split tests <span class="count">4</span></a>
+      <div class="nav-group-label">Deep dives</div>
+      <a href="forms.html">Forms &amp; surveys</a>
+      <a href="closer-funnel.html">Closer funnel</a>
+      <a href="nurture.html">Nurture &amp; reactivation</a>
+      <a href="smartlists.html">Smart lists</a>
+      <a href="tags.html">Tags &amp; snippets</a>
+      <a href="lgg.html">LGG funnels</a>
+      <a href="changelog.html">Change log</a>
+    </nav>
+    <div class="foot">
+      <div class="line">Snapshot read from GHL</div>
+      <div class="line">Sep 28 &amp; Oct 28, 2026</div>
+    </div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Your CRM, explained</h1>
+        <p class="subtitle">The machine <strong>makes money</strong> — but it is full of holes. For every person who books a call, someone else gets <strong>forgotten</strong>.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Updated Oct 28, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi">
+          <div class="label">Money in (30 days, Stripe)</div>
+          <div class="value pos">$174,204</div>
+          <div class="note">100 payments · closers closed $339,500</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Visitors (30 days)</div>
+          <div class="value">14,500</div>
+          <div class="note">people looked at your pages</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Opt-ins (30 days)</div>
+          <div class="value">1,900 <span class="unit">· 13.1%</span></div>
+          <div class="note">people gave you their info</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Open leaks</div>
+          <div class="value neg">106</div>
+          <div class="note">24 urgent · 82 medium/low</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>The leaky pipe</h2>
+        <span class="quiet">the whole business in one picture</span>
+      </div>
+      <div class="card">
+        <div class="funnel">
+          <div class="stage" style="width:100%">
+            <div class="bar">
+              <span>Visitors</span><span class="n">14,500</span>
+            </div>
+          </div>
+          <div class="stage" style="width:62%">
+            <div class="bar lt">
+              <span>Opt-ins</span><span class="n">1,900 · 13.1%</span>
+            </div>
+            <div class="drop">↓ 12,600 people leave and never give their info — normal, but…</div>
+          </div>
+          <div class="stage" style="width:52%">
+            <div class="bar grey">
+              <span>Into the "router" (follow-up emails)</span><span class="n">3,156</span>
+            </div>
+            <div class="drop">↓ inflates: a broken ClickFunnels webhook double-counts (leak 2)</div>
+          </div>
+          <div class="stage" style="width:24%">
+            <div class="bar red">
+              <span>Actually followed up</span><span class="n">~15%</span>
+            </div>
+            <div class="drop">↓ 80 automations are switched OFF; 106 holes let leads fall out</div>
+          </div>
+          <div class="stage" style="width:14%">
+            <div class="bar">
+              <span>Sales</span><span class="n">$82,500</span>
+            </div>
+          </div>
+        </div>
+        <p class="small muted mb0" style="margin-top:10px">Bars are to scale by volume. The red bar is where the holes are: most people who raise their hand never get a follow-up.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>The one thing to know</h2>
+      </div>
+      <div class="grid2">
+        <div class="card">
+          <h3>What's working</h3>
+          <p class="desc" style="font-size:14px; color:var(--text)">People <strong>are</strong> finding you and buying. Stripe took <strong>$174,204</strong> in 30 days. Your closers booked <strong>107 calls</strong> and closed <strong>$339,500</strong>. The top of the funnel is healthy.</p>
+        </div>
+        <div class="card">
+          <h3>What's broken</h3>
+          <p class="desc" style="font-size:14px; color:var(--text)">The follow-up is broken. <strong>106 holes</strong> let leads fall out. <strong>80 automations are built but switched off.</strong> Emails only reach <strong>24–60%</strong> of inboxes. And several booking calendars send the customer <strong>no confirmation at all</strong> — they book, then hear nothing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>The 5 biggest holes right now</h2>
+        <a href="leaks.html" class="quiet">View all 106 →</a>
+      </div>
+      <div class="card">
+        <div class="finding">
+          <div class="top"><span class="prio p1">P1</span><span class="title">Booking calendars send the customer no confirmation</span></div>
+          <div class="body">The 6 "Follow-Up Call" calendars (Lauren, Oksana, Nick, Cassi, Catherine, Meenasha) and a few webinar calendars have the "Contact" box unchecked. A lead books, then gets <strong>nothing</strong> — no link, no reminder email.</div>
+        </div>
+        <div class="finding">
+          <div class="top"><span class="prio p1">P1</span><span class="title">Messages ask for "last year's federal tax"</span></div>
+          <div class="body">Across 7 calendars, the confirmation SMS, closer emails and Reverse Audit emails ask leads to bring their last year's return or tax paid — the one thing they should not be asked.</div>
+        </div>
+        <div class="finding">
+          <div class="top"><span class="prio p1">P1</span><span class="title">Leads get lost between two automations</span></div>
+          <div class="body">Two workflows ("PG" and "SX") quietly remove leads from other follow-ups the same second they start. Confirmed in the execution logs: leads vanish before ever getting an email.</div>
+        </div>
+        <div class="finding">
+          <div class="top"><span class="prio p1">P1</span><span class="title">Wojo leads get nothing (127 people)</span></div>
+          <div class="body">Every Wojo webinar opt-in (127 matched) is meant to get a follow-up sequence, but all 4 Wojo workflows are switched off since Sep 8.</div>
+        </div>
+        <div class="finding">
+          <div class="top"><span class="prio p1">P1</span><span class="title">Emails don't arrive — or never get clicked</span></div>
+          <div class="body">Delivery runs 24–60%. Five main router emails have 0% clicks out of ~12,000 sends, partly because click-tracking is switched off and date/time fields print blank.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Quick map</h2>
+        <span class="quiet">click any page to dig in</span>
+      </div>
+      <div class="grid3">
+        <a href="leaks.html" class="card"><h3>Leaks <span class="pill neg">106</span></h3><p class="desc mb0">The full to-do list of holes, ranked by how much they cost you.</p></a>
+        <a href="workflows.html" class="card"><h3>Workflows <span class="pill warn">80 off</span></h3><p class="desc mb0">189 robots on, 80 built-but-off. What each one does.</p></a>
+        <a href="money.html" class="card"><h3>Money <span class="pill pos">$174K</span></h3><p class="desc mb0">Why Stripe shows sales but the dashboard shows $0 won.</p></a>
+        <a href="calendar.html" class="card"><h3>Calendars <span class="pill neg">broken</span></h3><p class="desc mb0">Which bookings send a confirmation and which send nothing.</p></a>
+        <a href="emails.html" class="card"><h3>Emails</h3><p class="desc mb0">Delivery 24–60%. Which emails actually get opened and clicked.</p></a>
+        <a href="splittests.html" class="card"><h3>Split tests <span class="pill warn">1 broken</span></h3><p class="desc mb0">4 running; the Book-a-Call test isn't actually splitting traffic.</p></a>
+        <a href="pipelines.html" class="card"><h3>Pipelines <span class="pill neutral">16</span></h3><p class="desc mb0">~70,000 dead cards. The closer scoreboard, owners and stages.</p></a>
+        <a href="funnels.html" class="card"><h3>Funnels <span class="pill neutral">57</span></h3><p class="desc mb0">Every funnel and page, and how well each converts.</p></a>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

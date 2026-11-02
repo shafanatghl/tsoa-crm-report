@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Split tests</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Tax Strategists of America</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Report</div>
+      <a href="index.html">Overview</a>
+      <a href="leaks.html">Leaks <span class="count">106</span></a>
+      <a href="funnels.html">Funnels <span class="count">57</span></a>
+      <a href="workflows.html">Workflows <span class="count">80 off</span></a>
+      <a href="pipelines.html">Pipelines <span class="count">16</span></a>
+      <a href="emails.html">Emails</a>
+      <a href="calendar.html">Calendars <span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="money.html">Money</a>
+      <a href="splittests.html" class="active">Split tests <span class="count">4</span></a>
+      <div class="nav-group-label">Deep dives</div>
+      <a href="forms.html">Forms &amp; surveys</a>
+      <a href="closer-funnel.html">Closer funnel</a>
+      <a href="nurture.html">Nurture &amp; reactivation</a>
+      <a href="smartlists.html">Smart lists</a>
+      <a href="tags.html">Tags &amp; snippets</a>
+      <a href="lgg.html">LGG funnels</a>
+      <a href="changelog.html">Change log</a>
+    </nav>
+    <div class="foot"><div class="line">Snapshot read from GHL</div><div class="line">Sep 28 &amp; Oct 28, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Split tests</h1>
+        <p class="subtitle">A <strong>split test</strong> shows two versions of a page to see which wins. You have <strong>4 running</strong> — and <strong>one of them is broken</strong>, so its result can't be trusted.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Updated Oct 28, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">Tests running</div><div class="value">4</div><div class="note">was 0 in September</div></div>
+        <div class="kpi"><div class="label">Broken</div><div class="value neg">1</div><div class="note">traffic not splitting</div></div>
+        <div class="kpi"><div class="label">Page candidates planned</div><div class="value">14</div><div class="note">P1–P14</div></div>
+        <div class="kpi"><div class="label">Email candidates planned</div><div class="value">12</div><div class="note">E1–E12</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The 4 live tests</h2><span class="quiet">control vs variation, since test start</span></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Test</th><th class="num">Control rate</th><th class="num">Variation rate</th><th class="num">Control views</th><th class="num">Variation views</th><th>Verdict</th></tr></thead>
+          <tbody>
+            <tr><td><strong>S1</strong> /book-a-qa-call-landing</td><td class="num">58.9%</td><td class="num">33.3%</td><td class="num">112</td><td class="num">6</td><td><span class="pill neg">broken — traffic not splitting</span></td></tr>
+            <tr><td><strong>S2</strong> /free-tax-training</td><td class="num">13.1%</td><td class="num">11.9%</td><td class="num">2,505</td><td class="num">2,448</td><td><span class="pill neutral">running clean · B trails by 1.2 pts</span></td></tr>
+            <tr><td><strong>S3</strong> /reverse-audit-register</td><td class="num">15.1%</td><td class="num">11.8%</td><td class="num">542</td><td class="num">474</td><td><span class="pill neutral">running · B trails</span></td></tr>
+            <tr><td><strong>S4</strong> /web-reg-ca-v3</td><td class="num">—</td><td class="num">—</td><td class="num">5</td><td class="num">3</td><td><span class="pill warn">no opt-ins · ad links need checking</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The broken one (S1)</h2></div>
+      <div class="notice red" style="margin-bottom:12px">
+        <strong>Book A Call split test:</strong> set to 50/50, but the control got <strong>112 views</strong> and the variation got <strong>6</strong>. Traffic isn't splitting, so the "58.9% vs 33.3%" result is meaningless. The cause: the booking-page countdown expired Oct 12 and redirects everyone to the <strong>control</strong> path.
+      </div>
+      <div class="card">
+        <p class="desc" style="font-size:14px;color:var(--text)"><strong>Fix:</strong> point the countdown's expire-redirect at the routed path (/book-a-qa-call-landing) and replace every /book-a-qa-call-page link in emails, SMS, ads and snippets. <a href="leaks.html">Leak #50.</a></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Ready to test next</h2><span class="quiet">pages with 30-day baselines</span></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Candidate</th><th class="num">Views</th><th class="num">Current rate</th><th>Why it's worth testing</th></tr></thead>
+          <tbody>
+            <tr><td>P3 /signup (organic)</td><td class="num">288</td><td class="num">49.7%</td><td>already high — push for more</td></tr>
+            <tr><td>P6 /book-a-qa-call-landing</td><td class="num">526</td><td class="num">71.4%</td><td>highest converter — protect it</td></tr>
+            <tr><td>P12 training /optin (Wojo)</td><td class="num">1,005</td><td class="num">16.4%</td><td>partner traffic, no nurture behind it</td></tr>
+            <tr><td>P10 /testimonials</td><td class="num">956</td><td class="num">0%</td><td>big traffic, zero capture — add a CTA</td></tr>
+            <tr><td>P14 /tax-calculator survey</td><td class="num">251</td><td class="num">9.6%</td><td>completion is low; shorten it</td></tr>
+          </tbody>
+        </table>
+        <p class="small muted mb0" style="margin-top:10px">Plus 12 email subject tests (E1–E12) are already baselined and waiting. Full list in the source workbook's <strong>Split Tests</strong> tab.</p>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

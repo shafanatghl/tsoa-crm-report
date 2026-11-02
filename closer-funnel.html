@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Closer funnel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Tax Strategists of America</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Report</div>
+      <a href="index.html">Overview</a>
+      <a href="leaks.html">Leaks <span class="count">106</span></a>
+      <a href="funnels.html">Funnels <span class="count">57</span></a>
+      <a href="workflows.html">Workflows <span class="count">80 off</span></a>
+      <a href="pipelines.html">Pipelines <span class="count">16</span></a>
+      <a href="emails.html">Emails</a>
+      <a href="calendar.html">Calendars <span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="money.html">Money</a>
+      <a href="splittests.html">Split tests <span class="count">4</span></a>
+      <div class="nav-group-label">Deep dives</div>
+      <a href="forms.html">Forms &amp; surveys</a>
+      <a href="closer-funnel.html" class="active">Closer funnel</a>
+      <a href="nurture.html">Nurture &amp; reactivation</a>
+      <a href="smartlists.html">Smart lists</a>
+      <a href="tags.html">Tags &amp; snippets</a>
+      <a href="lgg.html">LGG funnels</a>
+      <a href="changelog.html">Change log</a>
+    </nav>
+    <div class="foot"><div class="line">Snapshot read from GHL</div><div class="line">Sep 28 &amp; Oct 28, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>The closer funnel</h1>
+        <p class="subtitle">The path a lead walks to book a strategy call — one main page, 6 per-closer clones, a webinar version, and the confirmation page. Read step-by-step.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Updated Oct 28, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">Book a Call page views</div><div class="value">1,166</div><div class="note">723 uniques, Sep 28 – Oct 28</div></div>
+        <div class="kpi"><div class="label">Confirmation page</div><div class="value">203</div><div class="note">103 uniques</div></div>
+        <div class="kpi"><div class="label">Webinar book-a-call</div><div class="value">99</div><div class="note">35 uniques</div></div>
+        <div class="kpi"><div class="label">Bookings counted</div><div class="value neg">—</div><div class="note">calendar iframes don't count as opt-ins</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The 12 steps of the closer funnel</h2></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>#</th><th>Step</th><th>URL</th><th class="num">Views</th><th>Calendar / form</th></tr></thead>
+          <tbody>
+            <tr><td class="num">1</td><td>Closer VSL Book a Call</td><td class="mono">/strategy-call</td><td class="num">1,166</td><td>**The Enrollment Advisor (k2Oc), Closer form</td></tr>
+            <tr><td class="num">2</td><td>Closer Call Confirmed</td><td class="mono">/strategy-call-confirmed</td><td class="num">203</td><td>post-booking page (Vimeo videos)</td></tr>
+            <tr><td class="num">3–8</td><td>Per-closer VSL pages (Oksana, Cassi, Lauren, Nick, Catherine, Meenasha)</td><td class="mono">/strategy-call-{name}</td><td class="num">12–132</td><td>each closer's personal calendar, ?closer_link=</td></tr>
+            <tr><td class="num">9</td><td>Closer Not A Fit (Affiliate)</td><td class="mono">/strategy-call-not-a-fit</td><td class="num">29</td><td>W-2-only DQ page → affiliate link</td></tr>
+            <tr><td class="num">10</td><td>Closer VSL Book a Call: Brooke</td><td class="mono">/strategy-call-brooke</td><td class="num">27</td><td>Brooke Strategy Call (wHn1)</td></tr>
+            <tr><td class="num">11</td><td>Message From Carlotta</td><td class="mono">/message-from-carlotta</td><td class="num">131</td><td>standalone — not linked from any page</td></tr>
+            <tr><td class="num">12</td><td>Before Your Call</td><td class="mono">/before-your-strategy-call</td><td class="num">10</td><td>standalone — no tax-returns item (the good one)</td></tr>
+          </tbody>
+        </table>
+        <p class="small muted mb0" style="margin-top:8px">Every step's H1: <em>"Guaranteed ROI: At Minimum, Every Dollar You Invest Comes Back In Tax Savings…"</em>. All steps are CONTROL-only (no split test on the closer funnel).</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>How a lead flows in</h2></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Entry</th><th>Calendar</th><th>Disqualify routing</th><th>Confirmation</th></tr></thead>
+          <tbody>
+            <tr><td>/strategy-call</td><td>**The Enrollment Advisor (k2Oc), 6 closers</td><td>W-2 → not-a-fit · under $100K → Rowan Q&amp;A</td><td>/strategy-call-confirmed</td></tr>
+            <tr><td>/strategy-call-{closer}</td><td>each closer's personal calendar</td><td>same two DQ routes</td><td>/strategy-call-confirmed</td></tr>
+            <tr><td>/strategy-call-brooke</td><td>Brooke Strategy Call (wHn1), 30 min</td><td>same two DQ routes</td><td>/strategy-call-confirmed</td></tr>
+            <tr><td>/webinar-strategy-call</td><td>The Enrollment Advisor (Webinar) 7DW5</td><td>no business / under $100K → Q&amp;A (Webinar) calendar</td><td>/webinar-strategy-call-confirmed</td></tr>
+            <tr><td>direct widget (no page)</td><td>*The Enrollment Advisor (Minimal) Jszn</td><td>none (Minimal form)</td><td>/strategy-call-confirmed</td></tr>
+            <tr><td>Follow-Up widgets</td><td>6 Follow-Up Call calendars</td><td>full Closer form → DQ rules still fire</td><td>in-widget thank-you (no redirect)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Flags on this funnel</h2></div>
+      <div class="card">
+        <div class="finding"><div class="top"><span class="prio p1">copy</span><span class="title">Confirmation page asks for "last year's business and personal tax returns"</span></div><div class="body">Both /strategy-call-confirmed and /webinar-strategy-call-confirmed have the checklist item — /before-your-strategy-call does not.</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">copy</span><span class="title">Hero kicker: "FOR BUSINESS OWNERS WHO PAID $20,000+ IN FEDERAL TAX LAST YEAR"</span></div><div class="body">On every closer page and the webinar page.</div></div>
+        <div class="finding"><div class="top"><span class="prio p3">dead code</span><span class="title">The 4-question qualifier (#tsoa-q) is hidden by CSS</span></div><div class="body">The on-page quiz is display:none; the calendar shows directly. Qualification actually happens inside the booking form.</div></div>
+        <div class="finding"><div class="top"><span class="prio p3">inconsistency</span><span class="title">Two different countdowns</span></div><div class="body">Main page + webinar count to "November 5 cutoff"; per-closer pages count "days left to plan 2026" (to Dec 31).</div></div>
+        <div class="finding"><div class="top"><span class="prio p3">naming</span><span class="title">A Brooke calendar uses the slug "consultation-with-colin"</span></div><div class="body">"Tax Client Engagement Call with Brooke" (6C5PASb8bfi3EHvdKGem) still carries Colin's old slug.</div></div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

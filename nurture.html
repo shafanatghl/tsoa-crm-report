@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Nurture &amp; reactivation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Tax Strategists of America</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Report</div>
+      <a href="index.html">Overview</a>
+      <a href="leaks.html">Leaks <span class="count">106</span></a>
+      <a href="funnels.html">Funnels <span class="count">57</span></a>
+      <a href="workflows.html">Workflows <span class="count">80 off</span></a>
+      <a href="pipelines.html">Pipelines <span class="count">16</span></a>
+      <a href="emails.html">Emails</a>
+      <a href="calendar.html">Calendars <span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="money.html">Money</a>
+      <a href="splittests.html">Split tests <span class="count">4</span></a>
+      <div class="nav-group-label">Deep dives</div>
+      <a href="forms.html">Forms &amp; surveys</a>
+      <a href="closer-funnel.html">Closer funnel</a>
+      <a href="nurture.html" class="active">Nurture &amp; reactivation</a>
+      <a href="smartlists.html">Smart lists</a>
+      <a href="tags.html">Tags &amp; snippets</a>
+      <a href="lgg.html">LGG funnels</a>
+      <a href="changelog.html">Change log</a>
+    </nav>
+    <div class="foot"><div class="line">Snapshot read from GHL</div><div class="line">Sep 28 &amp; Oct 28, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Nurture &amp; reactivation</h1>
+        <p class="subtitle">The system that warms lost leads back up (NURTURE 21) and re-activates Brooke's old bookers. It's clever — but <strong>two robots keep breaking it</strong>.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Updated Oct 28, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">NURTURE 21 intake gate</div><div class="value">3,108</div><div class="note">1,058 active</div></div>
+        <div class="kpi"><div class="label">21-day nurture</div><div class="value">711</div><div class="note">594 active</div></div>
+        <div class="kpi"><div class="label">Brooke reactivation (BR)</div><div class="value">~430</div><div class="note">168 in BR01</div></div>
+        <div class="kpi"><div class="label">Gate patience (busy retries)</div><div class="value neg">185 days</div><div class="note">~6 months of re-checks</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>NURTURE 21, step by step</h2><span class="quiet">three stages</span></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Stage</th><th class="num">Enrolled</th><th>Triggers</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>1 · Lead Events</td><td class="num">3,247</td><td>23 (bookings, tags, forms, surveys)</td><td>Tags lead <strong>warm-lead</strong> or <strong>nurture21-check</strong>. If they book while active → remove from nurture.</td></tr>
+            <tr><td>2 · Intake Gate</td><td class="num">3,108</td><td>13 (nurture21-check, no-shows, cancels, opp lost)</td><td>Guards (not pipeline-only, not no-nurture), locks with <strong>nurture21-gating</strong>, waits 1 day, then admits if eligible.</td></tr>
+            <tr><td>3 · 21-Day Warm Lead Nurture</td><td class="num">711</td><td>none (entered from Gate)</td><td>7 emails every 3 days from Carlotta, 9 AM window, <strong>A/B subject split</strong>, booking link → Rowan (&lt;$100K) or Brooke.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Where it breaks (confirmed in the logs)</h2></div>
+      <div class="grid2">
+        <div class="card"><h3>PG deletes leads from the gate</h3><p class="desc" style="font-size:14px;color:var(--text)">When a Closer card moves to Nurture/Closed Lost, two robots fire at once: WF29 says "start the 21-day nurture", and PG says "this lead is pipeline-only, remove from 48 workflows" — <strong>including the nurture</strong>. PG wins the race. <strong>Lost closer leads never enter the nurture.</strong></p></div>
+        <div class="card"><h3>The stranded lock tag</h3><p class="desc" style="font-size:14px;color:var(--text)">Intake Gate locks each lead with tag <strong>nurture21-gating</strong>. If another robot (BR01, SP01, SX, PG) removes the lead mid-gate, the tag stays forever. Every future "wake" hits "Already gating → end". <strong>The lead can never enter the nurture again.</strong></p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The 21-day email sequence</h2><span class="quiet">Path A vs Path B = subject-line test only</span></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>#</th><th>Path A subject</th><th>Path B subject</th></tr></thead>
+          <tbody>
+            <tr><td class="num">E1</td><td>More money, and somehow keeping less</td><td>A former IRS auditor's question</td></tr>
+            <tr><td class="num">E2</td><td>Why filing on time can't fix this</td><td>The date that decides your tax bill</td></tr>
+            <tr><td class="num">E3</td><td>3 gaps I used to see as an auditor</td><td>Are you using any of these 3?</td></tr>
+            <tr><td class="num">E4</td><td>What happens in the hour</td><td>No pressure. Here's how it works.</td></tr>
+            <tr><td class="num">E5</td><td>"My business isn't big enough"</td><td>The 2 reasons owners wait</td></tr>
+            <tr><td class="num">E6</td><td>What waiting actually costs</td><td>The most expensive tax move</td></tr>
+            <tr><td class="num">E7</td><td>Should I close your file?</td><td>Closing the loop</td></tr>
+          </tbody>
+        </table>
+        <p class="small muted mb0" style="margin-top:8px">Same sender, pre-header and body on both paths — only the subject differs. E4 states "Our average client saves over $37,000" (flagged for review).</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Brooke reactivation (Madison's cadence)</h2></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Workflow</th><th class="num">Enrolled</th><th>Trigger</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>BR01 · No-Answer Cadence</td><td class="num">168</td><td>tag brk-reac-no-answer</td><td>Card → Madison Called once; SMS day 3 + day 7 from Brooke's number; day 8 → Nurture.</td></tr>
+            <tr><td>BR02 · Reply Router</td><td class="num">3</td><td>SMS reply (brk-reac-active)</td><td>Stops cadence; CALL NOW task to Madison (or Anahi for setters).</td></tr>
+            <tr><td>BR03 · Booked Exit</td><td class="num">198</td><td>7 bookings (Brooke + Rowan calendars)</td><td>Booked → card to Call Booked (Brooke) or brk-reac-silver-booked (Rowan).</td></tr>
+            <tr><td>BR04 · Wealth Crew</td><td class="num">11</td><td>tag brk-reac-wealth-crew</td><td>Wealth Crew Email 1; Email 2 if no click; → Nurture.</td></tr>
+            <tr><td>BR05 · Stop / DNC</td><td class="num">51</td><td>tag brk-reac-stop</td><td>DND all channels; card → Closed Lost.</td></tr>
+            <tr><td>SP01 · Setter No-Answer</td><td class="num">0</td><td>tag sp-reac-no-answer</td><td>Same cadence, no card steps; day 8 → nurture21-check.</td></tr>
+            <tr><td>SP04 · Setter Wealth Crew</td><td class="num">1</td><td>tag sp-reac-wealth-crew</td><td>Wealth Crew emails.</td></tr>
+            <tr><td>SX · Setter Exit on Closer Booking</td><td class="num">2,256</td><td>5 triggers (booking / card / stage)</td><td>Tags setters-exclude; removes from BR01, SP01, SP04, NURTURE 21.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The SX problem (confirmed)</h2></div>
+      <div class="card">
+        <p class="desc" style="font-size:14px;color:var(--text)"><strong>SX fires on any booking or any Brooke's/Closer card move</strong> — and removes the contact from BR01 and NURTURE 21. BR01's step 3 creates a Brooke's Pipeline card, which fires SX, which removes the contact from BR01 <strong>two seconds later</strong>. Result: <strong>everyone who entered BR01 after Oct 16 never got SMS 1 or SMS 2</strong>. The last people to actually finish the cadence were Kendall Keeler and Lynne Richardson, on Oct 24.</p>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

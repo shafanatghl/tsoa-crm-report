@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — LGG funnels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Tax Strategists of America</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Report</div>
+      <a href="index.html">Overview</a>
+      <a href="leaks.html">Leaks <span class="count">106</span></a>
+      <a href="funnels.html">Funnels <span class="count">57</span></a>
+      <a href="workflows.html">Workflows <span class="count">80 off</span></a>
+      <a href="pipelines.html">Pipelines <span class="count">16</span></a>
+      <a href="emails.html">Emails</a>
+      <a href="calendar.html">Calendars <span class="dot bad" style="margin-left:6px"></span></a>
+      <a href="money.html">Money</a>
+      <a href="splittests.html">Split tests <span class="count">4</span></a>
+      <div class="nav-group-label">Deep dives</div>
+      <a href="forms.html">Forms &amp; surveys</a>
+      <a href="closer-funnel.html">Closer funnel</a>
+      <a href="nurture.html">Nurture &amp; reactivation</a>
+      <a href="smartlists.html">Smart lists</a>
+      <a href="tags.html">Tags &amp; snippets</a>
+      <a href="lgg.html" class="active">LGG funnels</a>
+      <a href="changelog.html">Change log</a>
+    </nav>
+    <div class="foot"><div class="line">Snapshot read from GHL</div><div class="line">Sep 28 &amp; Oct 28, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>LGG funnels</h1>
+        <p class="subtitle">The agency (LGG / Juan Colicchio) build: webhooks in, Hyros tracking, and a webinar workflow whose <strong>SMS are all switched off and emails don't deliver</strong>.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Updated Oct 28, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">LGG webinar leads (JUAN)</div><div class="value">289</div><div class="note">0 active</div></div>
+        <div class="kpi"><div class="label">Discovery Call leads</div><div class="value">89</div><div class="note">every one carded at $20K</div></div>
+        <div class="kpi"><div class="label">JUAN SMS disabled</div><div class="value neg">5 of 5</div><div class="note">never send</div></div>
+        <div class="kpi"><div class="label">JUAN email delivery</div><div class="value neg">0%</div><div class="note">first email 14.29% of 14</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>How LGG leads flow</h2></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Step</th><th>What happens</th><th>Workflow</th></tr></thead>
+          <tbody>
+            <tr><td>1 · LGG landing page</td><td>outside GHL; collects name, phone, email + 3 qualify questions (incl. "Federal taxes paid last year")</td><td>—</td></tr>
+            <tr><td>2 · Pabbly webhook</td><td>posts JSON to GHL inbound webhook</td><td>*LGG New Lead / Discovery Call Funnel</td></tr>
+            <tr><td>3 · Contact + card</td><td>tags lgg-consultation-request + tsoa-intake-ready; <strong>creates a Closer card at $20,000 before any booking</strong></td><td>same</td></tr>
+            <tr><td>4 · 15 min wait</td><td>if no closer-booked tag → closer-applied-nobook (no follow-up built)</td><td>same</td></tr>
+            <tr><td>5 · Webinar side</td><td>webhook → tag lgg-landing-page → JUAN webinar workflow</td><td>*LGG New Lead → JUAN</td></tr>
+            <tr><td>6 · Hyros</td><td>booking → "Discovery Call"; attendee → "Webinar Attendee"; SQL → "SQL"</td><td>1–3. Hyros</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The problems</h2></div>
+      <div class="card">
+        <div class="finding"><div class="top"><span class="prio p1">issue</span><span class="title">Discovery Call has no "Qualified" branch</span></div><div class="body">Every webhook lead — qualified or not — gets a Closer card at $20,000. Inflates Call Booked (71 cards) and the $2.23M open value. (Leak 43.)</div></div>
+        <div class="finding"><div class="top"><span class="prio p1">issue</span><span class="title">JUAN: 5 SMS disabled, emails 0% delivered</span></div><div class="body">All 5 SMS steps are off; Emails 1–7 show 0% delivered. Emails use {{appointment.*}} fields in a tag-triggered flow → dates print blank. (Leak 46.)</div></div>
+        <div class="finding"><div class="top"><span class="prio p2">issue</span><span class="title">W-2 branch doesn't stop disqualified leads</span></div><div class="body">The "Qualified? No" branch has an empty condition and rejoins the reminder path — W-2 registrants still get the full reminder sequence.</div></div>
+        <div class="finding"><div class="top"><span class="prio p2">issue</span><span class="title">Funnel routes into other funnels; DQ URL is a 404</span></div><div class="body">/act opt-in → /act-workbook (Opt In Lisette funnel); W-2 → /thankyou-disqualified (returns 404).</div></div>
+        <div class="finding"><div class="top"><span class="prio p3">issue</span><span class="title">tsoa-intake-ready triggers nothing</span></div><div class="body">The only workflow that triggers on that tag (WF01) is Draft. So the tag applied by the Discovery workflow leads nowhere.</div></div>
+        <div class="finding"><div class="top"><span class="prio p3">copy</span><span class="title">"Federal taxes paid last year" on the LGG qualify page</span></div><div class="body">LGG's external qualify page asks for federal tax paid + last three years of returns — outside GHL, but flagged.</div></div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
