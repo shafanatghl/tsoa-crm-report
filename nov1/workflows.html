@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Workflows · Nov 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Live status · Nov 1, 2026</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Live report</div>
+      <a href="index.html">Overview</a>
+      <a href="calendars.html">Calendars</a>
+      <a href="automations.html">Automations</a>
+      <a href="workflows.html" class="active">Workflows</a>
+      <a href="money.html">Money</a>
+      <a href="pipelines.html">Pipelines</a>
+      <a href="changes.html">What changed</a>
+    </nav>
+    <div class="foot"><div class="line">Verified live from GHL</div><div class="line">November 1, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Workflows</h1>
+        <p class="subtitle">The automations, read live on Nov 1. <strong>230 running, 98 switched off.</strong></p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Live · Nov 1, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">Total workflows</div><div class="value">328</div><div class="note">+9 since Oct 28</div></div>
+        <div class="kpi"><div class="label">Running (published)</div><div class="value pos">230</div><div class="note">was 189 in snapshot</div></div>
+        <div class="kpi"><div class="label">Switched off (draft)</div><div class="value neg">98</div><div class="note">was 80 in snapshot</div></div>
+        <div class="kpi"><div class="label">Folders</div><div class="value">46</div><div class="note">organising the above</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>On vs off</h2></div>
+      <div class="card">
+        <div class="bar-row" style="grid-template-columns:150px 1fr 100px"><div class="bar-label">Running</div><div class="bar-track"><div class="bar-fill pos" style="width:70%"></div></div><div class="bar-val">230</div></div>
+        <div class="bar-row" style="grid-template-columns:150px 1fr 100px"><div class="bar-label">Switched off</div><div class="bar-track"><div class="bar-fill neg" style="width:30%"></div></div><div class="bar-val">98</div></div>
+        <p class="small muted mb0" style="margin-top:8px">About 3 in 10 automations are built but not running. The closer system, router and NURTURE 21 are all live; the switched-off pile is mostly old webinars, lead-gen templates and empty drafts.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The switched-off ones that matter</h2><span class="quiet">draft, but worth a decision</span></div>
+      <div class="grid3">
+        <div class="card"><h3>Wojo webinar (4)</h3><p class="desc mb0">The four "Tues/Thurs 2pm/6pm" Wojo follow-ups are still draft — Wojo opt-ins still get no nurture.</p></div>
+        <div class="card"><h3>Closer cart reminders (WF43/45/46)</h3><p class="desc mb0">"Sign your agreement" reminders still off — unsigned buyers get no nudge.</p></div>
+        <div class="card"><h3>Assign New Leads (random)</h3><p class="desc mb0">Still draft — the AE "New Lead" cards still have no auto-assigned owner.</p></div>
+        <div class="card"><h3>Appointment Confirmation + Reminder</h3><p class="desc mb0">The old generic confirmation automations (4 variants) remain draft.</p></div>
+        <div class="card"><h3>3.0 Webinar Showed (Follow Up)</h3><p class="desc mb0">Still draft, still holding leads.</p></div>
+        <div class="card"><h3>Empty "New Workflow : …" drafts</h3><p class="desc mb0">Multiple unnamed drafts still sitting in the account.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>What's running (the systems that matter)</h2></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>System</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Main webinar router (New Lead Pipeline + Reminders)</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td>Closer system (WF20–WF59)</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td>NURTURE 21 (Lead Events → Intake Gate → 21-Day)</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td>Brooke reactivation (BR01–BR05, SX) + Setter (SP01/SP04)</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td>Pipeline Gate (PG) + Webinar Booked Exit (WBX)</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td>Reverse Audit webinar (New Lead + Post-Webinar)</td><td><span class="pill pos">live</span></td></tr>
+            <tr><td>LGG (JUAN, Discovery, Hyros)</td><td><span class="pill pos">live</span></td></tr>
+          </tbody>
+        </table>
+        <p class="small muted mb0" style="margin-top:10px">Note: the workflow <em>trigger</em> layer (what fires each one) is stored in a signed Firebase file the read-only API doesn't expose, so "live" above means <strong>published and receiving contacts</strong>, not a re-audit of every trigger condition.</p>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

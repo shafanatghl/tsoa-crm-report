@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Money · Nov 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Live status · Nov 1, 2026</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Live report</div>
+      <a href="index.html">Overview</a>
+      <a href="calendars.html">Calendars</a>
+      <a href="automations.html">Automations</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="money.html" class="active">Money</a>
+      <a href="pipelines.html">Pipelines</a>
+      <a href="changes.html">What changed</a>
+    </nav>
+    <div class="foot"><div class="line">Verified live from GHL</div><div class="line">November 1, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Money</h1>
+        <p class="subtitle">Live payment data read straight from GHL on Nov 1. The closer checkouts and "New Offers" are now real revenue drivers.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Live · Nov 1, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">Succeeded, all time</div><div class="value pos">$1,156,191</div><div class="note">764 payments</div></div>
+        <div class="kpi"><div class="label">Last 30 days</div><div class="value pos">$741,876</div><div class="note">235 payments</div></div>
+        <div class="kpi"><div class="label">Failed (attempted)</div><div class="value" style="color:var(--warning)">$420,929</div><div class="note">86 failed charges</div></div>
+        <div class="kpi"><div class="label">Total transactions</div><div class="value">865</div><div class="note">all time</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Where the money comes from</h2><span class="quiet">succeeded, all time</span></div>
+      <div class="card">
+        <div class="bar-row" style="grid-template-columns:160px 1fr 100px"><div class="bar-label">Week 1</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">$276,201</div></div>
+        <div class="bar-row" style="grid-template-columns:160px 1fr 100px"><div class="bar-label">Closer Gold</div><div class="bar-track"><div class="bar-fill" style="width:82%"></div></div><div class="bar-val">$226,500</div></div>
+        <div class="bar-row" style="grid-template-columns:160px 1fr 100px"><div class="bar-label">Closer Diamond</div><div class="bar-track"><div class="bar-fill" style="width:81%"></div></div><div class="bar-val">$224,500</div></div>
+        <div class="bar-row" style="grid-template-columns:160px 1fr 100px"><div class="bar-label">New Offers</div><div class="bar-track"><div class="bar-fill" style="width:75%"></div></div><div class="bar-val">$207,500</div></div>
+        <div class="bar-row" style="grid-template-columns:160px 1fr 100px"><div class="bar-label">Week 2</div><div class="bar-track"><div class="bar-fill" style="width:36%"></div></div><div class="bar-val">$100,154</div></div>
+        <div class="bar-row" style="grid-template-columns:160px 1fr 100px"><div class="bar-label">Tuesday Fast Action</div><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div><div class="bar-val">$41,866</div></div>
+        <div class="bar-row" style="grid-template-columns:160px 1fr 100px"><div class="bar-label">Small Offers</div><div class="bar-track"><div class="bar-fill" style="width:8%"></div></div><div class="bar-val">$22,461</div></div>
+        <div class="bar-row" style="grid-template-columns:160px 1fr 100px"><div class="bar-label">Final</div><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div><div class="bar-val">$16,666</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Two notes on the numbers</h2></div>
+      <div class="grid2">
+        <div class="card"><h3>The closer carts are working</h3><p class="desc" style="font-size:14px;color:var(--text)">Gold + Diamond checkouts together = <strong>$451,000</strong>. These were barely live in the Oct 28 read — the closer payment path is now a top revenue source.</p></div>
+        <div class="card"><h3>Failed charges still leave money behind</h3><p class="desc" style="font-size:14px;color:var(--text)">86 failed charges attempted <strong>$420,929</strong>. Some later succeeded; the rest are recovered or lost. Worth a failed-payment follow-up if not already in place.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Stripe vs the pipeline</h2></div>
+      <div class="card">
+        <p class="desc" style="font-size:14px;color:var(--text)">The old report's headline was "Stripe took $174K but the dashboard shows $0 won." That gap has since been addressed with WF11/WF24 "Mark Won on Payment." The live all-time total is now <strong>$1.16M succeeded</strong> — whether the pipeline's "Closed Won" matches it live is a separate check (see Pipelines), but the payment wiring is clearly collecting revenue.</p>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

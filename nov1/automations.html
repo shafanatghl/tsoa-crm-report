@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Automations · Nov 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Live status · Nov 1, 2026</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Live report</div>
+      <a href="index.html">Overview</a>
+      <a href="calendars.html">Calendars</a>
+      <a href="automations.html" class="active">Automations</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="money.html">Money</a>
+      <a href="pipelines.html">Pipelines</a>
+      <a href="changes.html">What changed</a>
+    </nav>
+    <div class="foot"><div class="line">Verified live from GHL</div><div class="line">November 1, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Automations</h1>
+        <p class="subtitle">Which automations actually fire on calendar bookings, read <strong>live from the workflow builder</strong> on Nov 1 — the one thing the API can't show. This is the definitive trigger map.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Live · Nov 1, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">Automations checked</div><div class="value">141</div><div class="note">triggers read live</div></div>
+        <div class="kpi"><div class="label">Fire on any calendar (no filter)</div><div class="value neg">5</div><div class="note">the ones to fix</div></div>
+        <div class="kpi"><div class="label">Correctly scoped to closer calendars</div><div class="value pos">~20</div><div class="note">the working system</div></div>
+        <div class="kpi"><div class="label">Draft automations</div><div class="value" style="color:var(--warning)">many</div><div class="note">built but off</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>❌ Fire on ANY calendar — still need a filter</h2></div>
+      <div class="card">
+        <p class="desc" style="font-size:14px;color:var(--text);margin-bottom:10px">These five fire on <strong>every</strong> booking or appointment-status change in the account — including hiring, group and Q&amp;A calls that shouldn't trigger a sales follow-up.</p>
+        <table>
+          <thead><tr><th>Automation</th><th>Live trigger</th><th>Why it's a problem</th></tr></thead>
+          <tbody>
+            <tr><td><strong>*No Show/Canceled</strong></td><td class="mono">Appointment Status (any)</td><td>Emails every no-show/cancel from the Cold Leads flow — including closer leads. (Snapshot leak #18 / #80, still open.)</td></tr>
+            <tr><td><strong>SX · Setter Exit on Closer Booking</strong></td><td class="mono">Customer Booked Appointment (any) + Brooke's/Closer pipeline created/stage-changed</td><td>Removes leads from BR01 + NURTURE 21 on any booking. (Leak #55, still open.)</td></tr>
+            <tr><td><strong>WBX · Webinar Booked Exit</strong></td><td class="mono">Booked: any calendar</td><td>Any booking (incl. hiring/group) stops webinar messages. (Leak #55.)</td></tr>
+            <tr><td><strong>2. Hyros – Discovery Call</strong></td><td class="mono">Appointment Status (any) + Customer Booked (Sales)</td><td>Over-counts "Discovery Call" events on every calendar. (Leak #63.)</td></tr>
+            <tr><td><strong>Appointment Zapier Trigger</strong></td><td class="mono">Customer Booked Appointment</td><td>Zapier webhook on every booking, no scope.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>✅ Correctly scoped to the closer calendars</h2><span class="quiet">the working closer system</span></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Automation</th><th>Live trigger scope</th></tr></thead>
+          <tbody>
+            <tr><td>WF23 · Closer Deals of the Day</td><td>15 × "Booked or rescheduled on …" (Follow-Up + Enrollment Advisory + Closer Strategy Call calendars)</td></tr>
+            <tr><td>WF36 · Closer Booking Intake &amp; Reschedule</td><td>15 × "Booked …" (the closer calendar set)</td></tr>
+            <tr><td>WF37 · Closer No Show Sync</td><td>15 × "{calendar} no-show"</td></tr>
+            <tr><td>WF38 · Closer Cancel Sync</td><td>15 × "{calendar} cancelled"</td></tr>
+            <tr><td>WF52 · Closer Show Rate Texts</td><td>6 × "Booked Enrollment Advisory …" + Closer Strategy Call + Webinar</td></tr>
+            <tr><td>WF47 · Closer Link Source</td><td>7 × "Booked Enrollment Advisory / Closer Strategy …"</td></tr>
+            <tr><td>WF55 · Webinar Booking Tag</td><td>1 × "Booked Closer Strategy Call (Webinar)"</td></tr>
+            <tr><td>BR03 · Booked Exit</td><td>7 × "Booked …" (Brooke + Rowan + closer + Q&amp;A calendars)</td></tr>
+            <tr><td>WiserNotify Call Booked</td><td>Customer Booked Appointment + Form Submitted (social-proof webhook)</td></tr>
+            <tr><td>WF06 · Enrollment Booking · WF03 · Setter Booking · WF07B</td><td>Appointment status on the enrollment/setter calendars</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The verdict</h2></div>
+      <div class="card">
+        <p class="desc" style="font-size:15px;color:var(--text)">The closer booking system is <strong>correctly scoped</strong> — every booking on a closer calendar correctly fires intake, show-rate texts, no-show/cancel sync and deal-of-the-day tasks. The problem is <strong>five automations with no calendar filter</strong> that catch every booking in the account. Those are the live, current version of the "no calendar filter" leaks — and they're still open.</p>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

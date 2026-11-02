@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — Live Status · Nov 1, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Live status · Nov 1, 2026</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Live report</div>
+      <a href="index.html" class="active">Overview</a>
+      <a href="calendars.html">Calendars</a>
+      <a href="automations.html">Automations</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="money.html">Money</a>
+      <a href="pipelines.html">Pipelines</a>
+      <a href="changes.html">What changed</a>
+    </nav>
+    <div class="foot"><div class="line">Verified live from GHL</div><div class="line">November 1, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>Your CRM, live</h1>
+        <p class="subtitle">Every number below was read <strong>directly from GHL on November 1, 2026</strong> — not from the earlier spreadsheet snapshot. The short version: <strong>the fixes landed.</strong></p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Live · Nov 1, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="kpis">
+        <div class="kpi"><div class="label">Money in (last 30 days)</div><div class="value pos">$741,876</div><div class="note">235 payments · $1.16M all-time</div></div>
+        <div class="kpi"><div class="label">Workflows running</div><div class="value">230</div><div class="note">98 off · 328 total</div></div>
+        <div class="kpi"><div class="label">Calendars that confirm</div><div class="value pos">18</div><div class="note">up from ~1 in the Oct 28 read</div></div>
+        <div class="kpi"><div class="label">Calendars that send nothing</div><div class="value" style="color:var(--warning)">28</div><div class="note">still to fix</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The big correction</h2></div>
+      <div class="card">
+        <p class="desc" style="font-size:15px;color:var(--text)">The October report flagged that booking calendars "send the customer no confirmation." <strong>That is no longer true.</strong> As of Nov 1, all six Follow-Up Call calendars and the main closer calendars now send the customer a confirmation email <em>and</em> SMS, plus reminders. And the copy is fixed — it now says "bring two profit numbers" instead of asking for last year's tax.</p>
+        <div class="notice blue" style="margin-top:12px">The Ghada Lutfi problem (booked a call, got no confirmation) is <strong>resolved</strong> — the calendar she booked on now confirms by email + SMS.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Still on the fix-list</h2></div>
+      <div class="grid3">
+        <div class="card"><div class="big" style="color:var(--warning)">28</div><p class="desc mb0">calendars still send the customer <strong>nothing</strong> — mostly the Q&amp;A, group and personal calendars. See <a href="calendars.html">Calendars</a>.</p></div>
+        <div class="card"><div class="big" style="color:var(--warning)">2</div><p class="desc mb0">the webinar &amp; "minimal" enrollment calendars still skip the <strong>confirmation</strong> (they only send a reminder).</p></div>
+        <div class="card"><div class="big">98</div><p class="desc mb0">workflows still sitting <strong>draft / off</strong> (down from 80 → now 98 built-but-off). See <a href="workflows.html">Workflows</a>.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Where the money comes from now</h2><span class="quiet">live, succeeded payments</span></div>
+      <div class="card">
+        <div class="bar-row" style="grid-template-columns:150px 1fr 90px"><div class="bar-label">Week 1</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">$276,201</div></div>
+        <div class="bar-row" style="grid-template-columns:150px 1fr 90px"><div class="bar-label">Closer Gold</div><div class="bar-track"><div class="bar-fill" style="width:82%"></div></div><div class="bar-val">$226,500</div></div>
+        <div class="bar-row" style="grid-template-columns:150px 1fr 90px"><div class="bar-label">Closer Diamond</div><div class="bar-track"><div class="bar-fill" style="width:81%"></div></div><div class="bar-val">$224,500</div></div>
+        <div class="bar-row" style="grid-template-columns:150px 1fr 90px"><div class="bar-label">New Offers</div><div class="bar-track"><div class="bar-fill" style="width:75%"></div></div><div class="bar-val">$207,500</div></div>
+        <div class="bar-row" style="grid-template-columns:150px 1fr 90px"><div class="bar-label">Week 2</div><div class="bar-track"><div class="bar-fill" style="width:36%"></div></div><div class="bar-val">$100,154</div></div>
+        <p class="small muted mb0" style="margin-top:10px">The closer checkout carts (Gold + Diamond = <strong>$451,000</strong>) and "New Offers" are now real revenue drivers — they barely existed in the Oct 28 read. Full breakdown on <a href="money.html">Money</a>.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Read the detail</h2></div>
+      <div class="grid3">
+        <a href="calendars.html" class="card"><h3>Calendars <span class="pill neg">28 silent</span></h3><p class="desc mb0">Live notification status for all 49 calendars.</p></a>
+        <a href="workflows.html" class="card"><h3>Workflows <span class="pill warn">98 off</span></h3><p class="desc mb0">328 robots, on/off, live.</p></a>
+        <a href="money.html" class="card"><h3>Money <span class="pill pos">$1.16M</span></h3><p class="desc mb0">All-time and 30-day revenue, by source.</p></a>
+        <a href="pipelines.html" class="card"><h3>Pipelines <span class="pill neutral">16</span></h3><p class="desc mb0">The live pipeline board.</p></a>
+        <a href="changes.html" class="card"><h3>What changed</h3><p class="desc mb0">Oct 28 snapshot → Nov 1 live, side by side.</p></a>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

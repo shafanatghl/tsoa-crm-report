@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSOA CRM — What changed · Nov 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">T</span><div class="name">TSOA CRM</div><div class="scope">Live status · Nov 1, 2026</div></div>
+    <nav class="nav">
+      <div class="nav-group-label">Live report</div>
+      <a href="index.html">Overview</a>
+      <a href="calendars.html">Calendars</a>
+      <a href="automations.html">Automations</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="money.html">Money</a>
+      <a href="pipelines.html">Pipelines</a>
+      <a href="changes.html" class="active">What changed</a>
+    </nav>
+    <div class="foot"><div class="line">Verified live from GHL</div><div class="line">November 1, 2026</div></div>
+  </aside>
+
+  <main class="canvas">
+    <div class="title-row">
+      <div>
+        <h1>What changed</h1>
+        <p class="subtitle">The Oct 28 spreadsheet snapshot vs. the live CRM on Nov 1 — side by side.</p>
+      </div>
+      <div class="freshness"><span class="dot"></span>Live · Nov 1, 2026</div>
+    </div>
+
+    <section class="mt0">
+      <div class="section-head"><h2>The fixes that landed ✅</h2></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Item</th><th>Oct 28 snapshot said</th><th>Nov 1 live shows</th></tr></thead>
+          <tbody>
+            <tr><td>Follow-Up Call calendars</td><td>"contact gets no confirmation"</td><td><span class="pill pos">now send confirmation email + SMS + reminders</span></td></tr>
+            <tr><td>Closer / Enrollment calendars</td><td>"SMS asks for last year's federal tax"</td><td><span class="pill pos">copy fixed — "bring two profit numbers"</span></td></tr>
+            <tr><td>Workflows running</td><td>189 published</td><td><span class="pill pos">230 published</span></td></tr>
+            <tr><td>Money (30 days)</td><td>$174,204 (Stripe)</td><td><span class="pill pos">$741,876 succeeded</span></td></tr>
+            <tr><td>Closer payment carts</td><td>workflows in Draft</td><td><span class="pill pos">Gold + Diamond = $451,000 collected</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Still open ⚠️</h2></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Item</th><th>Oct 28 snapshot</th><th>Nov 1 live</th></tr></thead>
+          <tbody>
+            <tr><td>Calendars sending nothing</td><td>~14 (incl. 6 Follow-Up)</td><td><span class="pill neg">28 (Q&amp;A / group / personal)</span></td></tr>
+            <tr><td>Webinar + Minimal enrollment calendars</td><td>no confirmation</td><td><span class="pill warn">still no confirmation (reminder only)</span></td></tr>
+            <tr><td>Workflows switched off</td><td>80</td><td><span class="pill warn">98</span></td></tr>
+            <tr><td>Automations with no calendar filter</td><td>~4</td><td><span class="pill neg">5 confirmed live (No-Show, SX, WBX, Hyros, Zapier)</span></td></tr>
+            <tr><td>Failed payments</td><td>20 in 30d (~$145K)</td><td><span class="pill warn">86 all-time ($420,929 attempted)</span></td></tr>
+            <tr><td>Dead / legacy pipelines</td><td>~70k dead cards</td><td><span class="pill neutral">structure unchanged</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>The headline</h2></div>
+      <div class="card">
+        <p class="desc" style="font-size:15px;color:var(--text)">The original report's two biggest red flags — <strong>"calendars don't send confirmations"</strong> and <strong>"asks for last year's federal tax"</strong> — are <strong>both fixed</strong>. The closer payment machine is now producing real revenue ($451K from carts). What's left is the long tail: 28 quiet calendars, 98 draft workflows, and pipeline cleanup. <strong>The CRM is in materially better shape than the Oct 28 snapshot suggested.</strong></p>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
